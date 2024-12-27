@@ -50,4 +50,3 @@ Data Analyst with expertise in statistical analysis and research. Experienced in
 - Email: gbohigbaradc@aol.com
 - LinkedIn: [Gboh-Igbara D. Charles](https://www.linkedin.com/in/gboh-igbara-d-charles-3287041b2)
 - Portfolio Website: [Personal Portfolio](https://gbohigbaradc.wixsite.com/zhero-trybe-ventures)
-- GitHub: [Your GitHub Profile]

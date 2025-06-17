@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gboh-Igbara D. Charles - Data Analyst & Technical Professional</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            background-color: #f5f5f5;
+            background: #f5f5f5;
             color: #2c3e50;
         }
         .container {
@@ -21,10 +17,10 @@
             margin: 0 auto;
             padding: 20px;
         }
-        /* Hero Section Styles */
+        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #2c3e50, #3498db);
-            color: white;
+            color: #fff;
             padding: 60px 20px;
             margin-bottom: 40px;
         }
@@ -40,27 +36,23 @@
             height: 300px;
             border-radius: 15px;
             object-fit: cover;
-            border: 4px solid white;
+            border: 4px solid #fff;
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
-        .hero-text {
-            flex: 1;
-        }
-        .hero-text h1 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
+        .hero-text { flex: 1; }
+        .hero-text h1 { font-size: 2.5em; margin-bottom: 15px; }
         .highlight-text {
             color: #3498db;
-            background: white;
+            background: #fff;
             padding: 5px 15px;
             border-radius: 20px;
             display: inline-block;
             margin: 10px 0;
+            font-weight: bold;
         }
         /* Section Styles */
         section {
-            background: white;
+            background: #fff;
             border-radius: 15px;
             padding: 30px;
             margin-bottom: 30px;
@@ -73,7 +65,7 @@
             border-bottom: 3px solid #3498db;
             color: #2c3e50;
         }
-        /* Skills Section */
+        /* Skills */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -89,47 +81,38 @@
             color: #2c3e50;
             margin-bottom: 15px;
         }
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
+        /* Projects, Cards, Links */
         .project-card {
             background: #f8f9fa;
             border-radius: 10px;
             overflow: hidden;
-            transition: transform 0.3s;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
         .project-image {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
+            border-bottom: 1px solid #ddd;
         }
-        .project-content {
-            padding: 20px;
-        }
+        .project-content { padding: 20px; }
         .project-links {
             display: flex;
+            flex-wrap: wrap;
             gap: 10px;
             margin-top: 15px;
         }
         .project-link {
             background: #3498db;
-            color: white;
+            color: #fff;
             padding: 8px 15px;
             border-radius: 5px;
             text-decoration: none;
-            font-size: 0.9em;
+            font-size: 0.95em;
             transition: background 0.3s;
         }
-        .project-link:hover {
-            background: #2980b9;
-        }
-        /* Publications Section */
+        .project-link:hover { background: #2980b9; }
+        /* Publications */
         .publication-card {
             background: #f8f9fa;
             padding: 25px;
@@ -137,7 +120,7 @@
             margin-bottom: 20px;
             border-left: 4px solid #3498db;
         }
-        /* Contact Section */
+        /* Contact */
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -149,11 +132,8 @@
             background: #f8f9fa;
             border-radius: 10px;
         }
-        .contact-item a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        /* Photo Gallery Section */
+        .contact-item a { color: #3498db; text-decoration: none; }
+        /* Photo Gallery */
         .gallery-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -171,38 +151,27 @@
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .photo-image {
-            width: 100%;
-            height: auto;
+        .photo-image { width: 100%; height: auto; }
+        /* Responsive */
+        @media (max-width: 900px) {
+            .hero-content { flex-direction: column; text-align: center; }
+            .profile-image { width: 200px; height: 200px; }
         }
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            .profile-image {
-                width: 200px;
-                height: 200px;
-            }
-        }
-        /* Video Container */
+        /* Video */
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
-            overflow: hidden;
             max-width: 100%;
             background: #000;
             margin-bottom: 30px;
             border-radius: 10px;
+            overflow: hidden;
         }
         .video-container iframe {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
         }
     </style>
 </head>
@@ -223,7 +192,7 @@
         <section>
             <h2>About Me</h2>
             <p>
-                Multidisciplinary professional with a compelling blend of data analytics expertise and technical training. Strategically positioned at the intersection of data sciences and industrial processes, I am passionate about leveraging analytics and hands-on skills for real-world impact.
+                I am a multidisciplinary professional with expertise at the intersection of data analytics and industrial technical training. My passion is to transform data-driven insights into practical solutions for real-world challenges.
             </p>
         </section>
         <!-- Skills Section -->
@@ -233,10 +202,10 @@
                 <div class="skill-category">
                     <h3>Data Analytics</h3>
                     <ul>
-                        <li>Statistical Analysis & Modeling</li>
+                        <li>Statistical Analysis & Predictive Modeling</li>
                         <li>Data Visualization (Tableau, Power BI)</li>
                         <li>Python, SQL, Excel</li>
-                        <li>Predictive Analytics</li>
+                        <li>Machine Learning & AI</li>
                     </ul>
                 </div>
                 <div class="skill-category">
@@ -255,59 +224,88 @@
             <h2>Research & Publications</h2>
             <div class="publication-card">
                 <h3>Published Research Paper</h3>
-                <p>"Application of Logistic Regression Model on the Spread of Malaria Infection in Calabar Municipality"</p>
-                <p>Published in: Open Access Research Journal of Multidisciplinary Studies (2024)</p>
+                <p>
+                    "Application of Logistic Regression Model on the Spread of Malaria Infection in Calabar Municipality"<br>
+                    <em>Open Access Research Journal of Multidisciplinary Studies (2024)</em>
+                </p>
                 <div class="project-links">
-                    <a href="https://doi.org/10.53022/oarjms.2024.7.1.0055" class="project-link">View Publication</a>
-                    <a href="assets/documents/research-presentation.ppt" class="project-link">View Presentation</a>
+                    <a href="https://doi.org/10.53022/oarjms.2024.7.1.0055" class="project-link" target="_blank">View Publication</a>
+                    <a href="assets/documents/research-presentation.ppt" class="project-link" target="_blank">View Presentation</a>
                 </div>
             </div>
             <div class="publication-card">
                 <h3>Research Proposal</h3>
-                <p>"Enhancing Real-Time US Stock Analysis: An Integrated Statistical and AI-Driven Approach"</p>
+                <p>
+                    "Enhancing Real-Time US Stock Analysis: An Integrated Statistical and AI-Driven Approach"
+                </p>
                 <div class="project-links">
-                    <a href="assets/documents/Gboh-Igbara Research (PRC).pdf" class="project-link">View Proposal</a>
+                    <a href="assets/documents/Gboh-Igbara Research (PRC).pdf" class="project-link" target="_blank">View Proposal</a>
                 </div>
             </div>
         </section>
-        <!-- Technical Projects -->
+        <!-- Technical Projects Section -->
         <section>
             <h2>Technical Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="assets/images/pipefitting-project.jpg" alt="Pipefitting Project" class="project-image">
-                    <div class="project-content">
-                        <h3>NLNG/NCDMB T7 Project</h3>
-                        <p>Advanced training in industrial pipe fitting and welding techniques.</p>
-                        <div class="project-links">
-                            <a href="assets/projects/technical-documentation.pdf" class="project-link">Documentation</a>
-                            <a href="assets/projects/project-gallery.html" class="project-link">Photo Gallery</a>
-                        </div>
-                        <!-- YouTube Video Embeds -->
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/1lvcgvfkMjw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TYwFtg_lb8o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jDGZZ_jmJ_U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/h3YTDb-hW7g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+            <div class="project-card">
+                <img src="assets/images/pipefitting-project.jpg" alt="Pipefitting Project" class="project-image">
+                <div class="project-content">
+                    <h3>NLNG/NCDMB T7 Project</h3>
+                    <p>Advanced training in industrial pipe fitting and welding techniques.</p>
+                    <div class="project-links">
+                        <a href="assets/projects/technical-documentation.pdf" class="project-link" target="_blank">Documentation</a>
+                        <a href="assets/projects/project-gallery.html" class="project-link" target="_blank">Photo Gallery</a>
+                    </div>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1lvcgvfkMjw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TYwFtg_lb8o" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jDGZZ_jmJ_U" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/h3YTDb-hW7g" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Data Analytics Assessment</h3>
-                        <p>
-                            A curated collection of data analytics projects and assessments, including data cleaning, visualization, and analysis tasks. 
-                            Please see the full set of data analytics work in the dedicated repository.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://github.com/gbohigbaradc/DataAnalytics_Assessment" class="project-link" target="_blank">See Data Analytics Projects</a>
-                        </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Data Analytics Assessment</h3>
+                    <p>
+                        A curated collection of data analytics projects and assessments, including data cleaning, visualization, and analysis tasks.
+                        Please see the full set of data analytics work in the dedicated repository.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/gbohigbaradc/DataAnalytics_Assessment" class="project-link" target="_blank">See Data Analytics Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Data Science & Machine Learning Capstone Project Section -->
+        <section>
+            <h2>Data Science & Machine Learning Capstone Project</h2>
+            <div class="project-card">
+                <img src="assets/images/income-prediction-ml.jpg" alt="Income Prediction ML Capstone" class="project-image">
+                <div class="project-content">
+                    <h3>Income Prediction ML (Capstone Project)</h3>
+                    <p>
+                        This capstone project applies machine learning techniques to predict income categories based on demographic data.
+                        It covers data cleaning, EDA, feature engineering, model selection, and evaluation using Python and Jupyter Notebook.
+                    </p>
+                    <ul>
+                        <li>Interactive Jupyter Notebook (<code>.ipynb</code>)</li>
+                        <li>Comprehensive report (<code>.docx</code>) and datasets (<code>.csv</code>)</li>
+                        <li>
+                            Project <strong><a href="https://github.com/gbohigbaradc/Income-Prediction-ML/blob/main/README.md" target="_blank">README</a></strong> and
+                            <strong><a href="https://github.com/gbohigbaradc/Income-Prediction-ML/blob/main/LICENSE" target="_blank">License</a></strong>
+                        </li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/gbohigbaradc/Income-Prediction-ML" class="project-link" target="_blank">GitHub Repository</a>
+                        <a href="https://github.com/gbohigbaradc/Income-Prediction-ML/blob/main/Income%20Prediction%20ML.ipynb" class="project-link" target="_blank">Notebook (.ipynb)</a>
+                        <a href="https://github.com/gbohigbaradc/Income-Prediction-ML/blob/main/Income_Prediction_Report.docx" class="project-link" target="_blank">Report (.docx)</a>
+                        <a href="https://github.com/gbohigbaradc/Income-Prediction-ML/tree/main/data" class="project-link" target="_blank">Datasets (.csv)</a>
                     </div>
                 </div>
             </div>
@@ -331,11 +329,11 @@
                 </div>
                 <div class="contact-item">
                     <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/gboh-igbara-d-charles-3287041b2">Professional Profile</a>
+                    <a href="https://www.linkedin.com/in/gboh-igbara-d-charles-3287041b2" target="_blank">Professional Profile</a>
                 </div>
                 <div class="contact-item">
                     <h3>Portfolio</h3>
-                    <a href="https://gbohigbaradc.wixsite.com/zhero-trybe-ventures">Additional Work</a>
+                    <a href="https://gbohigbaradc.wixsite.com/zhero-trybe-ventures" target="_blank">Additional Work</a>
                 </div>
             </div>
         </section>
@@ -353,18 +351,14 @@
             { image: "assets/images/project9.jpg" },
             { image: "assets/images/project10.jpg" }
         ];
-
         const galleryContainer = document.getElementById('photo-gallery');
-
         photos.forEach(photo => {
             const photoCard = document.createElement('div');
             photoCard.className = 'photo-card';
-
             const photoImage = document.createElement('img');
             photoImage.src = photo.image;
             photoImage.alt = 'Photo';
             photoImage.className = 'photo-image';
-
             photoCard.appendChild(photoImage);
             galleryContainer.appendChild(photoCard);
         });

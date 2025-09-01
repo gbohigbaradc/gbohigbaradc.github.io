@@ -157,12 +157,23 @@
             margin: 18px 0 0 0;
             display: inline-block;
         }
-        .video-intro {
+        .video-intro, .video-showcase {
             margin: 22px 0;
             border-radius: 18px;
             overflow: hidden;
             box-shadow: 0 5px 18px rgba(44,62,80,0.18);
             max-width: 500px;
+            background: #000;
+        }
+        .video-title {
+            font-size: 1.16em;
+            font-weight: bold;
+            color: #144d80;
+            background: #eaf6ff;
+            margin: 0;
+            padding: 10px 15px 5px 15px;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
         }
         section {
             background: #fff;
@@ -277,7 +288,7 @@
         @media (max-width: 900px) {
             .hero-content { flex-direction: column; text-align: center; }
             .profile-image { width: 160px; height: 160px; }
-            .video-intro { max-width: 100%; }
+            .video-intro, .video-showcase { max-width: 100%; }
         }
         .video-container {
             position: relative;
@@ -330,10 +341,28 @@
                 <div class="referral-cta">
                   Know a recruiter or remote hiring manager? <strong>Share this portfolio!</strong>
                 </div>
-                <!-- Video Introduction Placeholder -->
+                <!-- Video Introduction with Autoplay and Muted -->
                 <div class="video-intro">
-                    <!-- Replace the src with your own video URL when ready -->
-                    <iframe width="500" height="280" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen title="Video Introduction"></iframe>
+                    <div class="video-title">Introduction: Meet Gboh-Igbara D. Charles</div>
+                    <iframe width="500" height="280"
+                        src="https://www.youtube.com/embed/wpT2xVdekJY?autoplay=1&mute=1"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        title="Video Introduction"></iframe>
+                </div>
+                <!-- Project Showcase Video for 3MTT E-Tablet Award -->
+                <div class="video-showcase">
+                    <div class="video-title">Project Knowledge Showcase: Predictive Data Modelling in Data Science & Machine Learning (3MTT June 2025 E-Tablet Award)</div>
+                    <iframe width="500" height="280"
+                        src="https://www.youtube.com/embed/YOAx8QoHvwE?autoplay=1&mute=1"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        title="Project Knowledge Showcase - Predictive Data Modelling"></iframe>
+                </div>
+                <div style="margin:8px 0 0 0; color:#3498db; font-weight:600;">
+                    <span>🏆 Recognized by <strong>3MTT</strong> for outstanding project innovation in Predictive Modelling (awarded E-Tablet, June 2025).</span>
                 </div>
             </div>
         </div>
@@ -345,6 +374,9 @@
             <h2>Personal Statement</h2>
             <p>
                 I believe data should not just inform—it should inspire action. Experienced with international, distributed teams, I thrive in remote, cross-timezone environments and deliver results that make an impact.
+            </p>
+            <p>
+                <strong>🏆 3MTT E-Tablet Awardee (June 2025):</strong> Recognized nationally for my project <em>“Predictive Data Modelling in Data Science and Machine Learning”</em>, which showcased advanced analytical and machine learning skills, earning the prestigious E-Tablet device at the 3MTT knowledge showcase event.
             </p>
         </section>
         <!-- Career Objective -->
@@ -494,6 +526,13 @@
                 <p>
                     Published in Open Access Research Journal of Multidisciplinary Studies<br>
                     <a href="https://doi.org/10.53022/oarjms.2024.7.1.0055" target="_blank">Read Publication</a>
+                </p>
+            </div>
+            <div class="publication-card">
+                <h3>Project Knowledge Showcase: Predictive Data Modelling in Data Science & Machine Learning (3MTT June 2025 E-Tablet Award)</h3>
+                <p>
+                    <a href="https://youtu.be/YOAx8QoHvwE?si=cuRNkpWbdYHnWwpu" target="_blank">Watch the Project Video</a><br>
+                    <span style="color:#1abc9c;font-weight:500;">Awarded E-Tablet at 3MTT June 2025 for innovative predictive analytics and machine learning modeling.</span>
                 </p>
             </div>
             <div class="publication-card">

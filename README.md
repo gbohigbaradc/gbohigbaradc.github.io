@@ -1,48 +1,98 @@
-# Gboh-Igbara D. Charles - Data Analyst & Technical Professional
+# Gboh-Igbara D. Charles | Remote Data & Business Analyst Portfolio
 
-## About Me
-Multidisciplinary professional combining data analytics expertise with industrial technical training. Currently specializing in pipe fitting and welding while maintaining strong capabilities in statistical analysis and research.
+Welcome to the professional portfolio of **Gboh-Igbara D. Charles** — a passionate Data Analyst & Digital Strategist powering global businesses and energy operations.  
+Open to remote and international opportunities in Data Analytics, Business Analysis, and Digital Transformation.
 
-## 🎓 Education & Training
-- **Current:** NLNG/NCDMB T7 Project HCD Basic Training Programme (2024-2025)
-  - Specialization: Pipe Fitting, Welding and Fabrication
-- **BSc (Hons) Statistics** - University of Calabar (2021)
+---
 
-## 📊 Technical Skills
-### Data Analytics
-- **Tools:** Excel, SQL, Tableau, Python
-- **Analysis:** Statistical Modeling, Predictive Analysis
-- **Visualization:** Dashboard Creation, Interactive Reports
+## 🚀 Featured Highlights
 
-### Industrial Technical Skills
-- **Specialization:** Pipe Fitting, Welding and Fabrication
+- **🏆 3MTT E-Tablet Awardee (June 2025):**  
+  Recognized for outstanding project innovation in Predictive Data Modelling and Machine Learning at the 3MTT knowledge showcase.  
+  [View Award Presentation (Google Photos)](https://photos.app.goo.gl/KWPi5UiXfRZSAgFE6)  
+  ![Award Presentation Photo](assets/images/award-presentation-photo.jpg)
 
-## 🏆 Key Projects
+- **🔗 Portfolio Website:**  
+  [gbohigbaradc.github.io](https://gbohigbaradc.github.io/)
 
-### NLNG/NCDMB T7 Project
-Advanced pipe fitting and welding techniques, comprehensive technical training in industrial fabrication.
+- **🎥 Video Introduction:**  
+  [Meet Gboh-Igbara D. Charles (YouTube)](https://youtu.be/wpT2xVdekJY)
 
-### Data Analytics Assessment ([See Full Repo](https://github.com/gbohigbaradc/DataAnalytics_Assessment))
-A curated collection of data analytics projects and assessments.
-Topics include COVID-19 Data Visualization, Malaria Infection Spread Analysis, Stock Market Analysis, and more.
-Skills demonstrated: Data cleaning, analysis, dashboard creation, and statistical modeling.
-Please [visit the Data Analytics Assessment repository](https://github.com/gbohigbaradc/DataAnalytics_Assessment) for full details and project files.
+- **📊 Project Showcase:**  
+  [Predictive Data Modelling in Data Science & ML (YouTube)](https://youtu.be/YOAx8QoHvwE?si=cuRNkpWbdYHnWwpu)
 
-## 💼 Professional Experience
+---
 
-### Technical Intern at NLNG/NCDMB T7 Project (2024-Present)
-- Developing expertise in precision welding and industrial fabrication.
+## 📚 About Me
 
-### Entry-level Data Analyst at Thisway Conglomerate Ventures (2024-2025)
-- Conducted advanced data analysis using specialized software.
+- Experienced in **remote, cross-timezone collaboration** with distributed teams
+- Energetic contributor to data-driven business growth, digital transformation, and operational excellence
+- Background in energy sector field operations, financial services, and technical support
 
-## 📚 Certifications
-- Professional Soft skills in Emotional Intelligence (LinkedIn and Microsoft)
-- Career Essentials Skills in Business Analysis (LinkedIn and Microsoft)
-- Career Essentials Skills in Data Analysis and Visualization (LinkedIn and Microsoft)
-- English For IT 1 & 2 (Cisco Networking Academy)
+---
 
-## 📫 Contact Information
-- Email: gbohigbaradc@aol.com
-- LinkedIn: [Gboh-Igbara D. Charles](https://www.linkedin.com/in/gboh-igbara-d-charles-3287041b2)
-- Portfolio Website: [Personal Portfolio](https://gbohigbaradc.wixsite.com/zhero-trybe-ventures)
+## 👔 Professional Experience
+
+- **Greenville LNG, Nigeria:** Field Operations (2024 – Present)
+- **NLNG/NCDMB Train 7 HCCD Program:** Trainee & Safety Documentation
+- **Freelance Tech Support:** 100+ global clients (Remote & Onsite)
+- **Assurance Microfinance Bank:** Field Operations Agent
+
+---
+
+## 🎓 Education & Certifications
+
+- **BSc. Statistics** – University of Calabar
+- **NYSC** – National Youth Service Corps
+- **Data Analysis Certification** – DFA, 2025
+- **Data Science & ML** – CareerEX & Access Bank Youthrive, 2025
+- **3MTT/NJFP Internship** – NITDA, 2024
+- **3MTT DeepTech Cohort 2** – FMoC, ongoing
+- **ISPON HSE Level 1, 2 & 3** (Industrial Safety Practitioners of Nigeria)
+- **NLNG/NCDMB HSE & NDT Diplomas**
+
+---
+
+## 🏅 Certificates
+
+A gallery of certificates is available on the [portfolio site](https://gbohigbaradc.github.io/) and Google Drive links.  
+For modal gallery and download links, see the [Data Analysis & Data Science Certificates](https://gbohigbaradc.github.io/#certificates) section.
+
+---
+
+## 🔗 Professional Links
+
+- [LinkedIn](https://www.linkedin.com/in/gboh-igbara-d-charles-3287041b2)
+- [Upwork](https://www.upwork.com/freelancers/~gbohigbaradc)
+- [GitHub Projects](https://github.com/gbohigbaradc)
+- [Email](mailto:gbohigbaradc@aol.com)
+
+---
+
+## 📞 Availability
+
+**Available immediately for remote, hybrid, or global roles in any time zone.**  
+References available on request.
+
+---
+
+## ⭐ Recognition
+
+- **3MTT June Showcase:** Top global contributor for data innovation & knowledge dissemination
+
+---
+
+## 📣 Social Proof
+
+> "Working with Charles on a remote analytics project was a game-changer—he overdelivered every time, and our global team loved his communication style."  
+> — Senior Data Manager, International NGO
+
+> "His Power BI dashboards helped us cut reporting time in half. Highly recommended for any remote or distributed team."  
+> — Operations Lead, US-based Fintech Startup
+
+---
+
+## 📑 License
+
+This portfolio is open for review, collaboration, and professional inquiries.  
+All content © Gboh-Igbara D. Charles.  

@@ -46,7 +46,6 @@
     }
     </script>
     <style>
-        /* --- Responsive, modern styling --- */
         * { margin:0; padding:0; box-sizing:border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6; background:#f5f5f5; color:#2c3e50;}
         .container { max-width:1200px; margin:0 auto; padding:20px;}
@@ -79,11 +78,9 @@
         #modal .modal-content {background:#fff;padding:10px 24px;border-radius:10px;max-width:90vw;max-height:90vh;overflow:auto;position:relative;}
         #modal button.close-btn {position:absolute;top:10px;right:10px;font-size:2em;background:none;border:none;color:#333;cursor:pointer;}
         #modalFrame {width:80vw;height:70vh;border:none;}
-        /* Referral popup widget styling */
         #referral-popup {position:fixed;bottom:20px;right:20px;background:#3498db;color:#fff;padding:18px 24px;border-radius:14px;box-shadow:0 4px 16px rgba(0,0,0,0.20);z-index:3000;display:none;}
         #referral-popup .close-ref {position:absolute;top:6px;right:12px;background:none;border:none;color:#fff;font-size:1.5em;cursor:pointer;}
         @media (max-width:900px) { .hero-content {flex-direction:column;text-align:center;} .profile-image {width:160px;height:160px;} .video-intro,.video-showcase,.video-award {max-width:100%;}}
-        /* QR code and badge styling */
         .qr-section {text-align:center;margin:24px 0;}
         .badge-box {background:#fffbe6;padding:20px;border-radius:12px;margin:20px auto;max-width:420px;box-shadow:0 2px 10px rgba(44,62,80,0.12);}
         .badge-box code {background:#f5f5f5;padding:8px 12px;border-radius:6px;display:block;font-size:0.99em;}
@@ -119,6 +116,15 @@
         </div>
     </div>
     <div class="container">
+        <!-- Personal Statement/About Me Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am Gboh-Igbara D. Charles, a remote-first Data & Business Analyst with hands-on experience across the energy sector, digital transformation, and machine learning. I help organizations turn data into actionable insights, optimize processes, and drive innovation—whether in the field or from anywhere in the world. I am passionate about sustainable solutions, AI for impact, and collaborating across borders to solve real business problems. <br><br>
+                <strong>Core values:</strong> integrity, continuous learning, stakeholder collaboration, and measurable results.
+            </p>
+        </section>
+
         <!-- QR Code Section -->
         <section class="qr-section">
             <h2>Scan & Connect Instantly</h2>
@@ -178,10 +184,9 @@
               document.getElementById('modal').style.display = 'none';
               document.getElementById('modalFrame').src = '';
             }
-            // Referral popup logic
             setTimeout(function() {
               document.getElementById('referral-popup').style.display = 'block';
-            }, 8000); // Show after 8 seconds
+            }, 8000);
         </script>
 
         <!-- Video Section: All Important Videos -->

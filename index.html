@@ -9,7 +9,7 @@
     <!-- OpenGraph & Twitter Card for Social Sharing -->
     <meta property="og:title" content="Hire Gboh-Igbara D. Charles | Remote Data & Business Analyst" />
     <meta property="og:description" content="Award-winning data analyst, machine learning practitioner, and remote business analyst for global energy and digital transformation." />
-    <meta property="og:image" content="https://gbohigbaradc.github.io/assets/images/gboh-igbara-d-charles-profile.jpg" />
+    <meta property="og:image" content="assets/images/gboh-igbara-d-charles-profile.jpg" />
     <meta property="og:url" content="https://gbohigbaradc.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
     <style>
@@ -86,7 +86,7 @@
             <div>Copy and share this badge on your website/blog to recommend me to employers:</div>
             <code>
 &lt;a href="https://gbohigbaradc.github.io/" target="_blank"&gt;
-  &lt;img src="https://gbohigbaradc.github.io/assets/images/gboh-igbara-d-charles-profile.jpg" alt="Hire Gboh-Igbara D. Charles – Data Analyst" style="border-radius:8px;width:120px;border:2px solid #3498db;"&gt;
+  &lt;img src="assets/images/gboh-igbara-d-charles-profile.jpg" alt="Hire Gboh-Igbara D. Charles – Data Analyst" style="border-radius:8px;width:120px;border:2px solid #3498db;"&gt;
 &lt;/a&gt;
             </code>
         </section>
@@ -99,7 +99,7 @@
                         <img src="assets/certificates/datascience/dfa-data-analysis-certificate-thumb.jpg" alt="DFA Data Analysis Certificate" class="photo-image" onclick="openModal('assets/certificates/datascience/dfa-data-analysis-certificate-full.jpg')">
                         <div style="padding:8px 0;text-align:center;">DFA Data Analysis Certificate (2025)</div>
                     </div>
-                    <!-- Add more as needed: -->
+                    <!-- Add more certificates in assets/certificates/datascience/ -->
                 </div>
             </div>
         </section>
@@ -111,23 +111,25 @@
                         <img src="assets/certificates/nlng-ncdmb/hse-level-3-thumb.jpg" alt="HSE Level 3 (ISPON, 2024)" class="photo-image" onclick="openModal('assets/certificates/nlng-ncdmb/hse-level-3-full.jpg')">
                         <div style="padding:8px 0;text-align:center;">HSE Level 3 (ISPON, 2024)</div>
                     </div>
+                    <!-- Add more certificates in assets/certificates/nlng-ncdmb/ -->
                 </div>
             </div>
         </section>
+        <!-- Modal for gallery images -->
         <div id="modal" style="display:none;position:fixed;z-index:2000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.8);justify-content:center;align-items:center;">
             <div class="modal-content" style="background:#fff;padding:10px 24px;border-radius:10px;max-width:90vw;max-height:90vh;overflow:auto;position:relative;">
                 <button class="close-btn" onclick="closeModal()" style="position:absolute;top:10px;right:10px;font-size:2em;background:none;border:none;color:#333;cursor:pointer;">&times;</button>
-                <iframe id="modalFrame" src="" style="width:80vw;height:70vh;border:none;"></iframe>
+                <img id="modalImg" src="" style="max-width:80vw;max-height:70vh;border:none;" alt="Certificate Full Image">
             </div>
         </div>
         <script>
             function openModal(url) {
               document.getElementById('modal').style.display = 'flex';
-              document.getElementById('modalFrame').src = url;
+              document.getElementById('modalImg').src = url;
             }
             function closeModal() {
               document.getElementById('modal').style.display = 'none';
-              document.getElementById('modalFrame').src = '';
+              document.getElementById('modalImg').src = '';
             }
             setTimeout(function() {
               document.getElementById('referral-popup').style.display = 'block';
@@ -178,33 +180,47 @@
         </section>
         <!-- EcoWatch Project Section -->
         <section>
-          <h2>Featured Project: EcoWatch – AI-Powered Environmental Monitoring for Africa</h2>
+          <h2>Featured Project: Ogoni EcoWatch – AI-Powered Environmental Monitoring</h2>
           <div style="background:#eaf6ff; border-radius:15px; padding:24px; box-shadow:0 2px 12px rgba(44,62,80,0.10); margin-bottom:24px;">
-            <h3 style="color:#2c3e50;">Transforming Environmental Stewardship Across Nigeria and Africa</h3>
+            <h3 style="color:#2c3e50;">Transforming Environmental Stewardship in Ogoni Land & Africa</h3>
             <p style="font-size:1.15em;">
-              <strong>EcoWatch</strong> is an innovative, community-driven platform that leverages artificial intelligence to revolutionize environmental monitoring throughout Nigeria and Africa. Designed for oil-producing regions and beyond, EcoWatch empowers citizens, local field teams, and organizations to detect, report, and visualize environmental hazards in real time—driving actionable insights for the energy sector and policymakers.
+              <strong>Ogoni EcoWatch</strong> is a community-driven platform leveraging AI to revolutionize environmental monitoring in Ogoni Land and across Africa. It empowers citizens, field teams, and organizations to detect, report, and visualize hazards in real time—driving actionable insights for energy sector and policymakers.
             </p>
             <ul style="margin: 18px 0 0 24px; font-size:1.08em;">
-              <li><b>AI-Powered Analysis:</b> Users upload photos of water, land, or vegetation; the app instantly detects clean water, oil spills, or ecological damage using advanced machine learning.</li>
-              <li><b>Nationwide & Continental Reach:</b> Scalable across Nigeria and Africa, EcoWatch brings vital environmental intelligence to communities from the Niger Delta to other critical ecosystems.</li>
-              <li><b>Live Mapping & Transparency:</b> Geo-tagged reports build a dynamic risk map, enabling companies, NGOs, and government agencies to respond quickly and transparently to incidents.</li>
-              <li><b>Empowering Communities:</b> Citizens become environmental guardians, providing ground-level data essential for compliance, ESG reporting, and sustainable development.</li>
-              <li><b>Strategic Value for Oil & Gas Leaders:</b> EcoWatch bridges the gap between field realities and executive decisions, helping companies meet regulatory standards, mitigate risks, and enhance their reputation for responsible operations.</li>
+              <li><b>AI-Powered Analysis:</b> Upload photos to instantly detect clean water, oil spills, or ecological damage (using ML models).</li>
+              <li><b>Local & Continental Reach:</b> Scalable across Ogoni Land and Africa, bringing vital environmental intelligence to communities.</li>
+              <li><b>Live Mapping & Transparency:</b> Geo-tagged reports build a dynamic risk map for companies, NGOs, and government agencies.</li>
+              <li><b>Empowering Communities:</b> Citizens become environmental guardians, supporting compliance, ESG, and sustainable development.</li>
+              <li><b>Strategic Value for Oil & Gas Leaders:</b> Bridges field realities and executive decisions, helping meet regulatory standards and mitigate risks.</li>
             </ul>
             <div style="margin-top:18px; background:#fffbe6; padding:16px; border-radius:10px; border-left:3px solid #3498db;">
-              <b>Why EcoWatch?</b><br>
-              Environmental challenges in Africa’s oil and gas regions demand real-time monitoring and community engagement. EcoWatch turns every citizen into a data contributor, supporting sustainability and compliance at scale.
+              <b>Why Ogoni EcoWatch?</b><br>
+              Environmental challenges in Ogoni and Africa’s oil regions demand real-time monitoring and engagement. EcoWatch turns every citizen into a data contributor, driving sustainability and compliance at scale.
             </div>
             <div style="margin-top:18px;">
               <b>Let’s Collaborate:</b><br>
-              I am seeking partnerships with energy companies, NGOs, and technology innovators who are committed to advancing ESG, protecting communities, and building a transparent future for Africa’s resources.
+              Seeking partnerships with energy companies, NGOs, and innovators for ESG, community protection, and a transparent future for Africa’s resources.
+            </div>
+          </div>
+          <div class="gallery-container">
+            <div class="photo-gallery">
+              <!-- Example EcoWatch images (add your own to assets/projects/ogoni-ecowatch/) -->
+              <div class="photo-card">
+                <img src="assets/projects/ogoni-ecowatch/ecowatch-dashboard-thumb.jpg" alt="EcoWatch Dashboard" class="photo-image" onclick="openModal('assets/projects/ogoni-ecowatch/ecowatch-dashboard-full.jpg')">
+                <div style="padding:8px 0;text-align:center;">EcoWatch Dashboard</div>
+              </div>
+              <div class="photo-card">
+                <img src="assets/projects/ogoni-ecowatch/field-report-thumb.jpg" alt="Field Report Example" class="photo-image" onclick="openModal('assets/projects/ogoni-ecowatch/field-report-full.jpg')">
+                <div style="padding:8px 0;text-align:center;">Field Report Example</div>
+              </div>
+              <!-- Add more images to assets/projects/ogoni-ecowatch/ -->
             </div>
           </div>
           <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4JYwwKpFl5E?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="EcoWatch Presentation Part 1"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4JYwwKpFl5E?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="EcoWatch Presentation"></iframe>
           </div>
           <div style="margin-top:10px; color:#3498db; font-weight:600;">
-            <span>Explore how EcoWatch is shaping the future of environmental monitoring for Africa’s energy sector.</span>
+            <span>Explore how Ogoni EcoWatch is shaping environmental monitoring for Africa’s energy sector.</span>
           </div>
         </section>
         <!-- Referral Popup Widget -->

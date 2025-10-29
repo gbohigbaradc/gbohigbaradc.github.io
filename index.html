@@ -93,26 +93,35 @@
 
     <section aria-labelledby="video-heading">
       <h2 id="video-heading">Video Introductions & Knowledge Showcase</h2>
-
       <div style="margin-bottom:16px;">
         <div style="font-weight:700;color:#144d80;background:#eaf6ff;padding:8px 12px;border-radius:12px;display:inline-block;">Introduction: Meet Gboh-Igbara D. Charles</div>
         <div class="video-container" style="margin-top:8px;">
-          <iframe src="https://www.youtube.com/embed/wpT2xVdekJY?autoplay=0&mute=1" title="Video Introduction" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/wpT2xVdekJY?autoplay=1&mute=1"
+                  title="Video Introduction"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"></iframe>
         </div>
       </div>
-
       <div style="margin-top:14px;">
         <div style="font-weight:700;color:#144d80;background:#eaf6ff;padding:8px 12px;border-radius:12px;display:inline-block;">Project Knowledge Showcase: Predictive Data Modelling (3MTT June 2025)</div>
         <p style="margin:8px 0;color:#444;"><strong>How I won the 3MTT E-Tablet Award:</strong> After months of hands-on training I developed a predictive ML model that impressed the panel. This video showcases the project and the award moment.</p>
         <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/YOAx8QoHvwE?autoplay=0&mute=1" title="Project Knowledge Showcase - Predictive Data Modelling" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/YOAx8QoHvwE?autoplay=1&mute=1"
+                  title="Project Knowledge Showcase - Predictive Data Modelling"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"></iframe>
         </div>
       </div>
-
       <div style="margin-top:18px;">
         <div style="font-weight:700;color:#144d80;background:#eaf6ff;padding:8px 12px;border-radius:12px;display:inline-block;">Award Presentation: E-Tablet Winner – 3MTT June 2025</div>
         <div class="video-container" style="margin-top:8px;">
-          <iframe src="https://www.youtube.com/embed/7oeISNe8DIg?autoplay=0&mute=1" title="Award Presentation - 3MTT E-Tablet" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/7oeISNe8DIg?autoplay=1&mute=1"
+                  title="Award Presentation - 3MTT E-Tablet"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"></iframe>
         </div>
       </div>
     </section>
@@ -126,7 +135,11 @@
           <div id="projects-ogoni-gallery" class="photo-gallery" aria-live="polite"></div>
         </div>
         <div class="video-container" style="margin-top:12px;">
-          <iframe src="https://www.youtube.com/embed/4JYwwKpFl5E?autoplay=0&mute=1" title="EcoWatch Presentation" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/4JYwwKpFl5E?autoplay=1&mute=1"
+                  title="EcoWatch Presentation"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"></iframe>
         </div>
       </div>
     </section>
@@ -194,7 +207,7 @@
     modalEl.addEventListener('click', (e) => { if (e.target === modalEl) closeModal(); });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modalEl.style.display === 'flex') closeModal(); });
 
-    // show referral popup after 8s
+    // referral popup after 8s
     setTimeout(function() {
       const popup = document.getElementById('referral-popup');
       if (popup) {
@@ -202,17 +215,9 @@
         popup.setAttribute('aria-hidden', 'false');
       }
     }, 8000);
-
-    // helpful debug: warn on image load errors
-    window.addEventListener('error', function (ev) {
-      if (ev.target && ev.target.tagName === 'IMG') {
-        console.warn('Image load error for:', ev.target.src);
-      }
-    }, true);
   </script>
-
-  <!-- data-driven renderers -->
   <script src="assets/js/certificates-render.js" defer></script>
   <script src="assets/js/projects-render.js" defer></script>
+  <script src="assets/js/debug-assets.js" defer></script>
 </body>
 </html>

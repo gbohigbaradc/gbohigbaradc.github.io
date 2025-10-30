@@ -1,1 +1,11 @@
-[ { "category": "datascience", "year": 2025, "issuer": "DFA", "title": "Data Analysis Certificate", "thumb": "assets/certificates/datascience/2025-dfa-data-analysis-certificate-thumb.jpg", "full": "assets/certificates/datascience/2025-dfa-data-analysis-certificate-full.jpg", "pdf": "assets/certificates/datascience/2025-dfa-data-analysis-certificate-certificate.pdf" } ]
+[
+  {
+    "category": "datascience",
+    "year": 2025,
+    "issuer": "DFA",
+    "title": "Data Analysis Certificate",
+    "thumb": "assets/certificates/datascience/2025-dfa-data-analysis-certificate-thumb.jpg",
+    "full": "assets/certificates/datascience/2025-dfa-data-analysis-certificate-full.jpg",
+    "pdf": "assets/certificates/datascience/2025-dfa-data-analysis-certificate-certificate.pdf"
+  }
+]

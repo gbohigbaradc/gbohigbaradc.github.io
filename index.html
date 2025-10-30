@@ -31,10 +31,6 @@
     .caption { padding:12px; text-align:center; font-weight:600; color:var(--dark); }
     .caption small { display:block; margin-top:8px; font-weight:500; color:#4a5568; }
     .badge-box { background:#fffbe6; padding:18px; border-radius:12px; margin:20px auto; max-width:620px; box-shadow:0 2px 10px rgba(44,62,80,0.12); }
-    .modal { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:2200; justify-content:center; align-items:center; padding:20px; }
-    .modal .modal-content { max-width:92vw; max-height:88vh; background:#fff; padding:12px; border-radius:10px; overflow:auto; position:relative; }
-    .modal img { width:100%; height:auto; display:block; border-radius:6px; }
-    .close-btn { position:absolute; top:8px; right:10px; font-size:1.6rem; background:none; border:none; cursor:pointer; color:#333; }
     .file-button { background:#fff; border:1px solid #ddd; padding:6px 10px; border-radius:8px; color:#144d80; text-decoration:none; font-weight:600; display:inline-flex; gap:8px; align-items:center; }
     .video-container { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; margin-top:12px; background:#000; }
     .video-container iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
@@ -84,10 +80,23 @@
       </code>
     </section>
 
+    <!-- CERTIFICATES SECTION: Pure HTML, add more cards as needed -->
     <section aria-labelledby="certs-heading">
       <h2 id="certs-heading">Data Science & Machine Learning Certificates</h2>
       <div class="gallery-container">
-        <div id="gallery-certificates" class="photo-gallery" aria-live="polite"></div>
+        <div class="photo-gallery" aria-live="polite">
+          <!-- Example Certificate Card -->
+          <div class="photo-card">
+            <img src="assets/certificates/datascience/2025-dfa-data-analysis-certificate-thumb.jpg" alt="Data Analysis Certificate" class="photo-image" />
+            <div class="caption">
+              Data Analysis Certificate<br />
+              <small>DFA • 2025</small>
+              <br />
+              <a class="file-button" href="assets/certificates/datascience/2025-dfa-data-analysis-certificate-certificate.pdf" target="_blank">📄 Download PDF</a>
+            </div>
+          </div>
+          <!-- Add more certificates below, just copy & edit this block -->
+        </div>
       </div>
     </section>
 
@@ -126,13 +135,26 @@
       </div>
     </section>
 
+    <!-- FEATURED PROJECT: Ogoni EcoWatch Gallery -->
     <section aria-labelledby="ogoni-heading">
       <h2 id="ogoni-heading">Featured Project: Ogoni EcoWatch – AI-Powered Environmental Monitoring</h2>
       <div style="background:#eaf6ff;border-radius:12px;padding:18px;box-shadow:0 2px 12px rgba(44,62,80,0.08);">
         <h3 style="margin-top:0;color:var(--dark);">Transforming Environmental Stewardship in Ogoni Land & Africa</h3>
         <p><strong>Ogoni EcoWatch</strong> is a community-driven platform leveraging AI to revolutionize environmental monitoring. It empowers citizens, field teams, and organisations to detect and report hazards in real time—driving actionable insights for energy sector and policymakers.</p>
         <div class="gallery-container" style="margin-top:12px;">
-          <div id="projects-ogoni-gallery" class="photo-gallery" aria-live="polite"></div>
+          <div class="photo-gallery" aria-live="polite">
+            <!-- Example Ogoni EcoWatch Project File Card -->
+            <div class="photo-card">
+              <img src="assets/projects/ogoni-ecowatch/ogoni-ecowatch-thumb.jpg" alt="Ogoni EcoWatch Project" class="photo-image" />
+              <div class="caption">
+                Ogoni EcoWatch: Project Document<br />
+                <small>Environmental AI Monitoring</small>
+                <br />
+                <a class="file-button" href="assets/projects/ogoni-ecowatch/ogoni-ecowatch-project.pdf" target="_blank">📄 Download PDF</a>
+              </div>
+            </div>
+            <!-- Add more Ogoni EcoWatch project files below, copy & edit this block -->
+          </div>
         </div>
         <div class="video-container" style="margin-top:12px;">
           <iframe src="https://www.youtube.com/embed/4JYwwKpFl5E?autoplay=1&mute=1"
@@ -144,24 +166,26 @@
       </div>
     </section>
 
-    <section aria-labelledby="research-heading">
-      <h2 id="research-heading">Research — Published Work</h2>
+    <!-- ADDITIONAL PROJECTS GALLERY -->
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Other Projects & Downloads</h2>
       <div class="gallery-container">
-        <div id="projects-research-gallery" class="photo-gallery" aria-live="polite"></div>
+        <div class="photo-gallery" aria-live="polite">
+          <!-- Example Project Card -->
+          <div class="photo-card">
+            <img src="assets/projects/project1-thumb.jpg" alt="Project 1" class="photo-image" />
+            <div class="caption">
+              Malaria Logistic Regression (Research)<br />
+              <small>2025</small>
+              <br />
+              <a class="file-button" href="assets/projects/malaria-logistic-regression.pdf" target="_blank">📄 Download PDF</a>
+            </div>
+          </div>
+          <!-- Add more projects below, copy & edit this block -->
+        </div>
       </div>
     </section>
   </main>
-
-  <!-- Modal (shared) -->
-  <div id="modal" class="modal" role="dialog" aria-hidden="true">
-    <div class="modal-content" role="document">
-      <button id="modal-close" class="close-btn" aria-label="Close">&times;</button>
-      <img id="modalImg" src="" alt="Full view" />
-      <div style="text-align:center;margin-top:8px;">
-        <a id="modalDownload" class="file-button" href="#" target="_blank" rel="noopener">📄 Download</a>
-      </div>
-    </div>
-  </div>
 
   <!-- Referral Popup -->
   <div id="referral-popup" class="referral-popup" role="dialog" aria-hidden="true">
@@ -175,38 +199,6 @@
   </div>
 
   <script>
-    // modal control
-    const modalEl = document.getElementById('modal');
-    const modalImg = document.getElementById('modalImg');
-    const modalDownload = document.getElementById('modalDownload');
-    const modalClose = document.getElementById('modal-close');
-
-    function openModal(imageUrl, downloadUrl) {
-      modalImg.src = imageUrl || '';
-      if (downloadUrl) {
-        modalDownload.href = downloadUrl;
-        modalDownload.style.display = 'inline-flex';
-      } else {
-        modalDownload.style.display = 'none';
-        modalDownload.href = '#';
-      }
-      modalEl.style.display = 'flex';
-      modalEl.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-      modalEl.style.display = 'none';
-      modalEl.setAttribute('aria-hidden', 'true');
-      modalImg.src = '';
-      modalDownload.href = '#';
-      document.body.style.overflow = '';
-    }
-
-    modalClose.addEventListener('click', closeModal);
-    modalEl.addEventListener('click', (e) => { if (e.target === modalEl) closeModal(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modalEl.style.display === 'flex') closeModal(); });
-
     // referral popup after 8s
     setTimeout(function() {
       const popup = document.getElementById('referral-popup');
@@ -216,8 +208,5 @@
       }
     }, 8000);
   </script>
-  <script src="assets/js/certificates-render.js" defer></script>
-  <script src="assets/js/projects-render.js" defer></script>
-  <script src="assets/js/debug-assets.js" defer></script>
 </body>
 </html>

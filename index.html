@@ -34,9 +34,8 @@
     .file-button { background:#fff; border:1px solid #ddd; padding:6px 10px; border-radius:8px; color:#144d80; text-decoration:none; font-weight:600; display:inline-flex; gap:8px; align-items:center; }
     .video-container { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; margin-top:12px; background:#000; }
     .video-container iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
-    .referral-popup { display:none; position:fixed; bottom:20px; right:20px; background:var(--brand); color:#fff; padding:18px 24px; border-radius:14px; box-shadow:0 6px 24px rgba(0,0,0,0.22); z-index:9999; max-width:320px; }
+    .referral-popup { display:none; position:fixed; bottom:20px; right:20px; background:var(--brand); color:#fff; padding:18px 24px; border-radius:14px; box-shadow:0 6px 24px rgba(0,0,0,0.22); z-index:3000; max-width:340px; }
     .referral-popup a { color:#ffe082; text-decoration:underline; }
-    .close-ref { background:none;border:none;color:#fff;font-weight:700;cursor:pointer;font-size:1.1rem; }
     @media (max-width:900px){ .hero-content { flex-direction:column; text-align:center; } .profile-image { width:150px; height:150px; } }
   </style>
 </head>
@@ -62,7 +61,7 @@
   <main class="container" role="main">
     <section aria-labelledby="about-heading">
       <h2 id="about-heading">About Me</h2>
-      <p>I am Gboh-Igbara D. Charles, a remote-first Data & Business Analyst with experience across the energy sector, digital transformation, and machine learning. I help organisations turn data into actionable insights, optimise field operations, build predictive models and dashboards, and inform strategy for growth and efficiency. I work with remote teams, support stakeholder reporting, and deliver reproducible analyses.</p>
+      <p>I am Gboh-Igbara D. Charles, a remote-first Data & Business Analyst with experience across the energy sector, digital transformation, and machine learning. I help organisations turn data into actionable insights, optimise processes, and drive innovation—whether in the field or from anywhere in the world. <strong>Core values:</strong> integrity, continuous learning, stakeholder collaboration, and measurable results.</p>
     </section>
 
     <section aria-labelledby="qr-heading" class="qr-section">
@@ -81,6 +80,7 @@
       </code>
     </section>
 
+    <!-- CERTIFICATES SECTION: Pure HTML, add more cards as needed -->
     <section aria-labelledby="certs-heading">
       <h2 id="certs-heading">Data Science & Machine Learning Certificates</h2>
       <div class="gallery-container">
@@ -114,7 +114,7 @@
       </div>
       <div style="margin-top:14px;">
         <div style="font-weight:700;color:#144d80;background:#eaf6ff;padding:8px 12px;border-radius:12px;display:inline-block;">Project Knowledge Showcase: Predictive Data Modelling (3MTT June 2025)</div>
-        <p style="margin:8px 0;color:#444;"><strong>How I won the 3MTT E-Tablet Award:</strong> After months of hands-on training I developed a predictive ML model that impressed the panel. This video demonstrates the problem framing, model selection, evaluation and business impact.</p>
+        <p style="margin:8px 0;color:#444;"><strong>How I won the 3MTT E-Tablet Award:</strong> After months of hands-on training I developed a predictive ML model that impressed the panel. This video showcases the project and the award moment.</p>
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/YOAx8QoHvwE?autoplay=1&mute=1"
                   title="Project Knowledge Showcase - Predictive Data Modelling"
@@ -140,7 +140,7 @@
       <h2 id="ogoni-heading">Featured Project: Ogoni EcoWatch – AI-Powered Environmental Monitoring</h2>
       <div style="background:#eaf6ff;border-radius:12px;padding:18px;box-shadow:0 2px 12px rgba(44,62,80,0.08);">
         <h3 style="margin-top:0;color:var(--dark);">Transforming Environmental Stewardship in Ogoni Land & Africa</h3>
-        <p><strong>Ogoni EcoWatch</strong> is a community-driven platform leveraging AI, remote sensing and citizen reporting to revolutionize environmental monitoring. It empowers citizens, field teams, and organisations to detect, document and respond to pollution events more quickly using automated detection, structured reporting and mapping tools. The project focuses on practical, low-cost solutions that can scale across communities in Ogoni Land and other affected regions in Africa.</p>
+        <p><strong>Ogoni EcoWatch</strong> is a community-driven platform leveraging AI to revolutionize environmental monitoring. It empowers citizens, field teams, and organisations to detect and report hazards in real time—driving actionable insights for energy sector and policymakers.</p>
         <div class="gallery-container" style="margin-top:12px;">
           <div class="photo-gallery" aria-live="polite">
             <!-- Example Ogoni EcoWatch Project File Card -->
@@ -155,9 +155,6 @@
             </div>
             <!-- Add more Ogoni EcoWatch project files below, copy & edit this block -->
           </div>
-        </div>
-        <div style="margin-top:12px;color:#333;">
-          <p><strong>Note:</strong> A README has been added to assets/projects/ogoni-ecowatch/ to document the folder and next steps for the project. The main project PDF (ogoni-ecowatch-project.pdf) is expected in the same folder — add or replace the file there to make the document available for download on this page.</p>
         </div>
         <div class="video-container" style="margin-top:12px;">
           <iframe src="https://www.youtube.com/embed/4JYwwKpFl5E?autoplay=1&mute=1"
@@ -192,7 +189,7 @@
 
   <!-- Referral Popup -->
   <div id="referral-popup" class="referral-popup" role="dialog" aria-hidden="true">
-    <button class="close-ref" onclick="document.getElementById('referral-popup').style.display='none';" aria-label="Close referral popup">×</button>
+    <button class="close-ref" onclick="document.getElementById('referral-popup').style.display='none';" aria-label="Close referral popup" style="position:absolute;top:6px;right:12px;background:none;border:none;color:#fff;font-size:1.3em;cursor:pointer;">&times;</button>
     <div style="font-size:1.05em;margin-bottom:8px;">💡 Enjoying my portfolio? Please share or recommend me to employers in data, energy, or tech!</div>
     <div style="font-size:0.96em;">
       <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://gbohigbaradc.github.io/" target="_blank" rel="noopener">Share on LinkedIn</a> |

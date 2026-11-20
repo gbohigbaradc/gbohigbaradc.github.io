@@ -2,245 +2,419 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gboh-Igbara D. Charles | Remote Data & Business Analyst</title>
-  <meta name="description" content="Portfolio of Gboh-Igbara D. Charles — Data & Business Analyst. Projects, research, certificates and downloads." />
-  <meta name="keywords" content="Data Analyst, Machine Learning, Energy, Certificates, Research, Projects, Ogoni EcoWatch, CardioAI, Malaria Logistic Regression" />
-  <meta property="og:title" content="Gboh-Igbara D. Charles — Remote Data & Business Analyst" />
-  <meta property="og:image" content="assets/images/gboh-igbara-d-charles-profile.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#102820" />
+  <title>Gboh-Igbara D. Charles | Data Scientist &amp; AI Engineer</title>
+  <meta name="description" content="Gboh-Igbara D. Charles is a Data Scientist and AI Engineer building practical, responsible products across healthcare, machine learning, environmental monitoring and analytics. Explore JoiHealth HMS and more." />
+  <meta name="keywords" content="Gboh-Igbara D. Charles, Data Scientist, AI Engineer, JoiHealth HMS, healthcare technology, machine learning, data analysis, Ogoni EcoWatch, CardioAI" />
+  <link rel="canonical" href="https://gbohigbaradc.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gboh-Igbara D. Charles — Data Scientist &amp; AI Engineer" />
+  <meta property="og:description" content="Building useful, responsible data and AI products. Discover JoiHealth HMS, healthcare safety design, machine learning and environmental projects." />
+  <meta property="og:image" content="https://gbohigbaradc.github.io/assets/images/gboh-igbara-d-charles-profile.jpg" />
   <meta property="og:url" content="https://gbohigbaradc.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
   <style>
-    :root { --brand:#3498db; --dark:#2c3e50; --muted-bg:#f5f5f5; --accent:#ffe082; }
-    * { box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; background:var(--muted-bg); color:var(--dark); -webkit-font-smoothing:antialiased;}
-    .container { max-width:1200px; margin:0 auto; padding:20px; }
-    .hero { background:linear-gradient(135deg,var(--dark),var(--brand)); color:#fff; padding:44px 20px; border-radius:10px; margin-bottom:22px; }
-    .hero-content { display:flex; gap:28px; align-items:center; max-width:1200px; margin:0 auto; }
-    .profile-image { width:200px; height:200px; border-radius:12px; object-fit:cover; border:4px solid #fff; box-shadow:0 8px 18px rgba(0,0,0,0.18); }
-    .hero-text h1 { margin:0 0 8px; font-size:1.9rem; }
-    .quick-pitch { display:inline-block; padding:8px 12px; border-radius:12px; background: rgba(255,224,130,0.08); color:var(--accent); font-weight:600; margin:10px 0; }
-    .cta-btn { background:var(--brand); color:#fff; padding:10px 14px; text-decoration:none; border-radius:8px; font-weight:700; margin-right:8px; display:inline-block; }
-    .cta-btn.secondary { background:#fff;color:var(--brand);border:1px solid rgba(0,0,0,0.06); }
-    section { background:#fff; border-radius:12px; padding:22px; margin:18px 0; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
-    h2 { font-size:1.4rem; margin:0 0 12px; color:var(--dark); border-bottom:3px solid var(--brand); display:inline-block; padding-bottom:8px; }
-    .gallery-container { padding-top:10px; }
-    .photo-gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin-top:10px; }
-    .photo-card { border-radius:10px; overflow:hidden; background:#fff; box-shadow:0 3px 10px rgba(0,0,0,0.06); display:flex; flex-direction:column; }
-    .photo-image { width:100%; height:180px; object-fit:cover; cursor:pointer; display:block; }
-    .caption { padding:12px; text-align:center; font-weight:600; color:var(--dark); }
-    .caption small { display:block; margin-top:8px; font-weight:500; color:#4a5568; }
-    .badge-box { background:#fffbe6; padding:18px; border-radius:12px; margin:20px auto; max-width:620px; box-shadow:0 2px 10px rgba(44,62,80,0.12); }
-    .file-button { background:#fff; border:1px solid #ddd; padding:6px 10px; border-radius:8px; color:#144d80; text-decoration:none; font-weight:600; display:inline-flex; gap:8px; align-items:center; }
-    .video-container { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; margin-top:12px; background:#000; }
-    .video-container iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
-    .referral-popup { display:none; position:fixed; bottom:20px; right:20px; background:var(--brand); color:#fff; padding:18px 24px; border-radius:14px; box-shadow:0 6px 24px rgba(0,0,0,0.22); z-index:3000; max-width:340px; }
-    .referral-popup a { color:#ffe082; text-decoration:underline; }
-    @media (max-width:900px){ .hero-content { flex-direction:column; text-align:center; } .profile-image { width:150px; height:150px; } }
+    :root {
+      color-scheme: light;
+      --ink: #17241e;
+      --muted: #64736a;
+      --green: #176b4b;
+      --green-dark: #102820;
+      --lime: #d7ed9b;
+      --paper: #f5f6ef;
+      --white: #fff;
+      --line: #e2e8de;
+      --shadow: 0 16px 42px rgba(16, 40, 32, .09);
+      --radius: 20px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    a { color: var(--green); }
+    a:focus-visible, button:focus-visible { outline: 3px solid #e6a93c; outline-offset: 3px; }
+    .skip-link { position: absolute; left: 12px; top: -60px; z-index: 20; padding: 10px 14px; background: #fff; border-radius: 8px; }
+    .skip-link:focus { top: 12px; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
+    .site-header { position: sticky; top: 0; z-index: 10; background: rgba(245, 246, 239, .94); border-bottom: 1px solid rgba(226, 232, 222, .85); backdrop-filter: blur(14px); }
+    .nav { min-height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { color: var(--green-dark); font-size: .92rem; font-weight: 850; text-decoration: none; letter-spacing: -.02em; }
+    .nav-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 18px; }
+    .nav-links a { color: #435249; font-size: .84rem; font-weight: 700; text-decoration: none; }
+    .nav-links a:hover { color: var(--green); }
+    .hero { position: relative; overflow: hidden; padding: 82px 0 76px; color: #fff; background: radial-gradient(ellipse at 86% 12%, rgba(215,237,155,.2), transparent 30%), linear-gradient(130deg, #102820, #174c38 68%, #216646); }
+    .hero::after { position: absolute; right: -120px; bottom: -310px; width: 580px; height: 580px; border: 1px solid rgba(255,255,255,.13); border-radius: 50%; content: ""; box-shadow: 0 0 0 54px rgba(255,255,255,.025), 0 0 0 110px rgba(255,255,255,.02); }
+    .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.5fr .7fr; align-items: center; gap: 52px; }
+    .eyebrow { margin: 0 0 14px; color: var(--lime); font-size: .76rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { max-width: 760px; margin: 0; font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.03; letter-spacing: -.065em; }
+    .hero-lead { max-width: 700px; margin: 22px 0 0; color: rgba(255,255,255,.82); font-size: clamp(1.05rem, 2vw, 1.26rem); }
+    .hero-role { margin: 12px 0 0; color: rgba(255,255,255,.7); font-weight: 650; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 27px; }
+    .button { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; gap: 8px; padding: 10px 15px; border: 1px solid transparent; border-radius: 10px; background: var(--lime); color: var(--green-dark); font-size: .9rem; font-weight: 800; text-decoration: none; transition: transform .18s ease, background .18s ease; }
+    .button:hover { transform: translateY(-2px); background: #e5f6bb; }
+    .button-outline { border-color: rgba(255,255,255,.35); background: transparent; color: #fff; }
+    .button-outline:hover { background: rgba(255,255,255,.1); }
+    .portrait-frame { justify-self: end; width: min(260px, 100%); padding: 9px; border: 1px solid rgba(255,255,255,.28); border-radius: 28px; background: rgba(255,255,255,.1); transform: rotate(2deg); }
+    .portrait { display: block; width: 100%; aspect-ratio: 1; border-radius: 20px; object-fit: cover; }
+    .hero-note { margin: 12px 0 0; color: rgba(255,255,255,.67); font-size: .78rem; text-align: center; }
+    main { padding: 28px 0 70px; }
+    section { margin: 24px 0; }
+    .panel { padding: clamp(22px, 4vw, 38px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
+    .section-kicker { margin: 0 0 7px; color: var(--green); font-size: .74rem; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+    h2 { margin: 0 0 14px; color: var(--green-dark); font-size: clamp(1.65rem, 3vw, 2.25rem); line-height: 1.17; letter-spacing: -.045em; }
+    h3 { margin: 0 0 8px; color: var(--green-dark); font-size: 1.16rem; line-height: 1.3; }
+    p { margin: 0 0 13px; }
+    .muted { color: var(--muted); }
+    .intro-grid { display: grid; grid-template-columns: 1.4fr .8fr; gap: 32px; align-items: start; }
+    .highlight-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .highlight-list li { padding: 12px 14px; border-radius: 12px; background: #f3f7ed; color: #34463a; font-size: .92rem; }
+    .highlight-list strong { color: var(--green-dark); }
+    .project-feature { position: relative; overflow: hidden; padding: clamp(24px, 5vw, 48px); border: 0; background: linear-gradient(140deg, #fff, #f3f8e9); }
+    .project-feature::after { position: absolute; top: -130px; right: -100px; width: 360px; height: 360px; border: 1px solid rgba(23,107,75,.12); border-radius: 50%; content: ""; box-shadow: 0 0 0 40px rgba(23,107,75,.025), 0 0 0 80px rgba(23,107,75,.02); }
+    .project-feature > * { position: relative; z-index: 1; }
+    .feature-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 20px; }
+    .status { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border: 1px solid #d5e6bf; border-radius: 99px; background: #f5faea; color: #41652a; font-size: .74rem; font-weight: 800; }
+    .status::before { width: 8px; height: 8px; border-radius: 50%; background: #76a932; content: ""; }
+    .feature-title { max-width: 800px; font-size: clamp(2rem, 4vw, 3.25rem); }
+    .feature-copy { max-width: 800px; color: #52635a; font-size: 1.02rem; }
+    .feature-points { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0; }
+    .point { padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.82); }
+    .point strong { display: block; margin-bottom: 5px; color: var(--green-dark); }
+    .point span { color: var(--muted); font-size: .86rem; }
+    .callout { margin: 20px 0 0; padding: 15px 17px; border-left: 4px solid #d6a839; border-radius: 0 10px 10px 0; background: #fff9e9; color: #5e512e; font-size: .88rem; }
+    .module-grid, .principle-grid, .project-grid, .media-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .small-card, .project-card, .media-card { padding: 19px; border: 1px solid var(--line); border-radius: 15px; background: #fff; }
+    .small-card p, .project-card p, .media-card p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .icon-label { display: inline-block; margin-bottom: 12px; padding: 5px 8px; border-radius: 7px; background: #edf5e6; color: var(--green); font-size: .72rem; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .table-wrap { overflow-x: auto; margin-top: 12px; border: 1px solid var(--line); border-radius: 13px; }
+    table { width: 100%; border-collapse: collapse; text-align: left; }
+    th, td { padding: 13px 15px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { background: #f4f7f0; color: var(--green-dark); font-size: .84rem; }
+    td { color: #52635a; font-size: .88rem; }
+    tr:last-child td { border-bottom: 0; }
+    .architecture { overflow-x: auto; margin: 18px 0; padding: 18px; border-radius: 14px; background: #102820; color: #e4f0de; }
+    .architecture pre { margin: 0; font: 600 .82rem/1.65 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 15px; }
+    .text-link { display: inline-flex; align-items: center; gap: 6px; padding: 8px 11px; border: 1px solid var(--line); border-radius: 9px; background: #fff; color: var(--green); font-size: .84rem; font-weight: 750; text-decoration: none; }
+    .text-link:hover { border-color: #9dc58b; background: #f6faef; }
+    .live-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 19px; }
+    .live-link { display: block; padding: 15px; border: 1px solid var(--line); border-radius: 12px; color: var(--green-dark); text-decoration: none; }
+    .live-link:hover { border-color: #9dc58b; }
+    .live-link strong { display: block; overflow-wrap: anywhere; }
+    .live-link span { color: var(--muted); font-size: .8rem; }
+    .video-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 16px; }
+    .video-card { overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+    .video-card h3 { padding: 15px 15px 0; font-size: 1rem; }
+    .video-card p { padding: 0 15px; color: var(--muted); font-size: .85rem; }
+    .video-frame { position: relative; height: 0; padding-bottom: 56.25%; background: #102820; }
+    .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 14px; }
+    .gallery-card { overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+    .gallery-card img { display: block; width: 100%; height: 170px; object-fit: cover; }
+    .gallery-caption { padding: 14px; text-align: left; }
+    .gallery-caption strong { display: block; color: var(--green-dark); }
+    .gallery-caption small { display: block; margin: 4px 0 11px; color: var(--muted); }
+    .file-button { display: inline-block; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; color: var(--green); font-size: .82rem; font-weight: 750; text-decoration: none; }
+    .file-button:hover { background: #f3f7ed; }
+    .certificate-placeholder { display: grid; min-height: 170px; place-items: center; padding: 18px; background: linear-gradient(135deg, #edf5e6, #f9f4df); color: #52635a; text-align: center; }
+    .certificate-placeholder span { font-size: 2rem; }
+    .qr-layout { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+    .qr-layout img { width: 150px; height: 150px; border: 1px solid var(--line); border-radius: 12px; }
+    .badge-code { overflow-x: auto; margin-top: 12px; padding: 14px; border-radius: 10px; background: #f3f5ef; color: #34463a; font-size: .8rem; }
+    .stack-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; padding: 0; list-style: none; }
+    .stack-list li { padding: 6px 9px; border: 1px solid var(--line); border-radius: 99px; background: #f8faf5; color: #52635a; font-size: .8rem; font-weight: 700; }
+    footer { padding: 30px 0 42px; border-top: 1px solid var(--line); color: var(--muted); font-size: .86rem; }
+    .footer-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+    .referral-popup { position: fixed; right: 18px; bottom: 18px; z-index: 15; display: none; width: min(360px, calc(100% - 36px)); padding: 20px; border: 1px solid rgba(255,255,255,.2); border-radius: 16px; background: var(--green-dark); color: #fff; box-shadow: 0 14px 36px rgba(0,0,0,.24); }
+    .referral-popup p { padding-right: 17px; font-size: .92rem; }
+    .referral-popup a { color: var(--lime); }
+    .close-ref { position: absolute; top: 9px; right: 11px; border: 0; background: transparent; color: #fff; cursor: pointer; font-size: 1.3rem; }
+    @media (max-width: 820px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+      .portrait-frame { justify-self: center; grid-row: 1; width: 180px; }
+      .hero-actions, .feature-top { justify-content: center; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .module-grid, .principle-grid, .project-grid { grid-template-columns: repeat(2, 1fr); }
+      .live-links { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .wrap { width: min(100% - 28px, 1120px); }
+      .nav { align-items: flex-start; flex-direction: column; padding: 12px 0; gap: 7px; }
+      .nav-links { justify-content: flex-start; gap: 8px 14px; }
+      .nav-links a { font-size: .78rem; }
+      .hero { padding: 52px 0 48px; }
+      .hero-actions .button { flex: 1 1 140px; }
+      .feature-points, .module-grid, .principle-grid, .project-grid, .video-grid, .two-col { grid-template-columns: 1fr; }
+      .panel { border-radius: 16px; }
+      th, td { min-width: 150px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
   </style>
 </head>
 <body>
-  <header class="hero" role="banner">
-    <div class="hero-content container">
-      <img src="assets/images/gboh-igbara-d-charles-profile.jpg" alt="Gboh-Igbara D. Charles" class="profile-image" />
-      <div class="hero-text">
-        <h1>Gboh-Igbara D. Charles</h1>
-        <div class="quick-pitch">I turn raw data into business growth stories—fast. From field ops in energy to ML, I deliver actionable insights for global remote teams.</div>
-        <p style="margin:10px 0;color:#fff;font-weight:700;">Remote Data & Business Analyst | Energy Sector | Digital Strategy | Available for remote roles</p>
-        <div style="margin-top:12px;">
-          <a class="cta-btn" href="assets/documents/Gboh-Igbara-Charles-Data-Analyst-Remote.pdf" target="_blank" rel="noopener">📄 Download CV (Remote)</a>
-          <a class="cta-btn" href="mailto:gbohigbaradc@aol.com">Contact</a>
-          <a class="cta-btn secondary" href="https://www.linkedin.com/in/gboh-igbara-d-charles-3287041b2" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="cta-btn secondary" href="https://www.upwork.com/freelancers/~gbohigbaradc" target="_blank" rel="noopener">Upwork</a>
-          <a class="cta-btn secondary" href="https://github.com/gbohigbaradc" target="_blank" rel="noopener">GitHub</a>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#top">GBOH-IGBARA D. CHARLES</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#joihealth">JoiHealth HMS</a>
+        <a href="#projects">Projects</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#contact">Contact</a>
       </div>
-    </div>
+    </nav>
   </header>
 
-  <main class="container" role="main">
-    <section aria-labelledby="about-heading">
-      <h2 id="about-heading">About Me</h2>
-      <p>I am Gboh-Igbara D. Charles, a remote-first Data & Business Analyst with experience across the energy sector, digital transformation, and machine learning. I help organisations turn data into actionable insights, optimise processes, and drive innovation—whether in the field or from anywhere in the world. <strong>Core values:</strong> integrity, continuous learning, stakeholder collaboration, and measurable results.</p>
-    </section>
-
-    <section aria-labelledby="qr-heading" class="qr-section">
-      <h2 id="qr-heading">Scan & Connect Instantly</h2>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=https://gbohigbaradc.github.io/" alt="QR Code for Portfolio" style="border-radius:8px;">
-      <div style="margin-top:10px;color:var(--brand);font-weight:600;">Share or scan to access my portfolio anywhere</div>
-    </section>
-
-    <section class="badge-box" aria-labelledby="badge-heading">
-      <h2 id="badge-heading">Embed My Portfolio Badge</h2>
-      <div>Copy and share this badge on your website/blog to recommend me to employers:</div>
-      <code style="display:block;margin-top:10px;background:#f5f5f5;padding:10px;border-radius:6px;">
-&lt;a href="https://gbohigbaradc.github.io/" target="_blank"&gt;
-  &lt;img src="assets/images/gboh-igbara-d-charles-profile.jpg" alt="Hire Gboh-Igbara D. Charles – Data Analyst" style="border-radius:8px;width:120px;border:2px solid #3498db;"&gt;
-&lt;/a&gt;
-      </code>
-    </section>
-
-    <!-- CERTIFICATES SECTION: Pure HTML, add more cards as needed -->
-    <section aria-labelledby="certs-heading">
-      <h2 id="certs-heading">Data Science & Machine Learning Certificates</h2>
-      <div class="gallery-container">
-        <div class="photo-gallery" aria-live="polite">
-          <!-- Example Certificate Card -->
-          <div class="photo-card">
-            <img src="assets/certificates/datascience/2025-dfa-data-analysis-certificate-thumb.jpg" alt="Data Analysis Certificate" class="photo-image" />
-            <div class="caption">
-              Data Analysis Certificate<br />
-              <small>DFA • 2025</small>
-              <br />
-              <a class="file-button" href="assets/certificates/datascience/2025-dfa-data-analysis-certificate-certificate.pdf" target="_blank">📄 Download PDF</a>
-            </div>
-          </div>
-          <!-- Add more certificates below, just copy & edit this block -->
+  <div id="top" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Data Science · AI Engineering · Product Building</p>
+        <h1>Turning complex problems into useful technology.</h1>
+        <p class="hero-lead">I build data-driven products that make information more useful, decisions more explainable and services more resilient—from clinical software to environmental monitoring.</p>
+        <p class="hero-role">Gboh-Igbara D. Charles · Data Scientist and AI Engineer · Built at JoiHealth Polyclinics</p>
+        <div class="hero-actions">
+          <a class="button" href="#joihealth">Explore JoiHealth HMS <span aria-hidden="true">↓</span></a>
+          <a class="button button-outline" href="assets/documents/Gboh-Igbara-Charles-Data-Analyst-Remote.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="button button-outline" href="mailto:gbohigbaradc@aol.com">Contact me</a>
         </div>
       </div>
-    </section>
-
-    <section aria-labelledby="video-heading">
-      <h2 id="video-heading">Video Introductions & Knowledge Showcase</h2>
-      <div style="margin-bottom:16px;">
-        <div style="font-weight:700;color:#144d80;background:#eaf6ff;padding:8px 12px;border-radius:12px;display:inline-block;">Introduction: Meet Gboh-Igbara D. Charles</div>
-        <div class="video-container" style="margin-top:8px;">
-          <iframe src="https://www.youtube.com/embed/wpT2xVdekJY?autoplay=1&mute=1"
-                  title="Video Introduction"
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                  loading="lazy"></iframe>
-        </div>
+      <div>
+        <div class="portrait-frame"><img class="portrait" src="assets/images/gboh-igbara-d-charles-profile.jpg" alt="Portrait of Gboh-Igbara D. Charles" /></div>
+        <p class="hero-note">Data analysis · machine learning · digital health</p>
       </div>
-      <div style="margin-top:14px;">
-        <div style="font-weight:700;color:#144d80;background:#eaf6ff;padding:8px 12px;border-radius:12px;display:inline-block;">Project Knowledge Showcase: Predictive Data Modelling (3MTT June 2025)</div>
-        <p style="margin:8px 0;color:#444;"><strong>How I won the 3MTT E-Tablet Award:</strong> After months of hands-on training I developed a predictive ML model that impressed the panel. This video showcases the project and the award moment.</p>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/YOAx8QoHvwE?autoplay=1&mute=1"
-                  title="Project Knowledge Showcase - Predictive Data Modelling"
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                  loading="lazy"></iframe>
-        </div>
-      </div>
-      <div style="margin-top:18px;">
-        <div style="font-weight:700;color:#144d80;background:#eaf6ff;padding:8px 12px;border-radius:12px;display:inline-block;">Award Presentation: E-Tablet Winner – 3MTT June 2025</div>
-        <div class="video-container" style="margin-top:8px;">
-          <iframe src="https://www.youtube.com/embed/7oeISNe8DIg?autoplay=1&mute=1"
-                  title="Award Presentation - 3MTT E-Tablet"
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                  loading="lazy"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED PROJECT: Ogoni EcoWatch Gallery -->
-    <section aria-labelledby="ogoni-heading">
-      <h2 id="ogoni-heading">Featured Project: Ogoni EcoWatch – AI-Powered Environmental Monitoring</h2>
-      <div style="background:#eaf6ff;border-radius:12px;padding:18px;box-shadow:0 2px 12px rgba(44,62,80,0.08);">
-        <h3 style="margin-top:0;color:var(--dark);">Transforming Environmental Stewardship in Ogoni Land & Africa</h3>
-        <p><strong>Ogoni EcoWatch</strong> is a community-driven platform leveraging AI to revolutionize environmental monitoring. It empowers citizens, field teams, and organisations to detect and report hazards in real time—driving actionable insights for energy sector and policymakers.</p>
-        <div class="gallery-container" style="margin-top:12px;">
-          <div class="photo-gallery" aria-live="polite">
-            <!-- Example Ogoni EcoWatch Project File Card -->
-            <div class="photo-card">
-              <img src="assets/projects/ogoni-ecowatch/ogoni-ecowatch-thumb.jpg" alt="Ogoni EcoWatch Project" class="photo-image" />
-              <div class="caption">
-                Ogoni EcoWatch: Project Document<br />
-                <small>Environmental AI Monitoring</small>
-                <br />
-                <a class="file-button" href="assets/projects/ogoni-ecowatch/ogoni-ecowatch-project.pdf" target="_blank">📄 Download PDF</a>
-              </div>
-            </div>
-            <!-- Add more Ogoni EcoWatch project files below, copy & edit this block -->
-          </div>
-        </div>
-        <div class="video-container" style="margin-top:12px;">
-          <iframe src="https://www.youtube.com/embed/4JYwwKpFl5E?autoplay=1&mute=1"
-                  title="EcoWatch Presentation"
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                  loading="lazy"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED PROJECT: CardioAI -->
-    <section aria-labelledby="cardioai-heading">
-      <h2 id="cardioai-heading">Featured Project: CardioAI – Explainable ML for Cardiovascular Risk Prediction</h2>
-      <div style="background:#eaf6ff;border-radius:12px;padding:18px;box-shadow:0 2px 12px rgba(44,62,80,0.08);">
-        <h3 style="margin-top:0;color:var(--dark);">Advancing Healthcare Analytics in Nigerian Healthcare Settings</h3>
-        <p><strong>CardioAI</strong> is an explainable machine learning system designed to predict cardiovascular risk and improve patient retention in Nigerian healthcare environments. This project combines clinical data analytics with interpretable AI models to support healthcare providers in making data-driven decisions for preventive care and patient engagement.</p>
-        <div class="gallery-container" style="margin-top:12px;">
-          <div class="photo-gallery" aria-live="polite">
-            <!-- CardioAI Project File Card -->
-            <div class="photo-card">
-              <img src="assets/projects/cardioai-thumb.jpg" alt="CardioAI Project" class="photo-image" />
-              <div class="caption">
-                CardioAI: Project Document<br />
-                <small>Healthcare ML System</small>
-                <br />
-                <a class="file-button" href="assets/projects/cardioai-project.pdf" target="_blank">📄 Download PDF</a>
-              </div>
-            </div>
-            <!-- Add more CardioAI project cards below, copy & edit this block -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ADDITIONAL PROJECTS GALLERY -->
-    <section aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Other Projects & Downloads</h2>
-      <div class="gallery-container">
-        <div class="photo-gallery" aria-live="polite">
-          <!-- Python Nanodegree Certificate -->
-          <div class="photo-card">
-            <img src="assets/projects/python-nanodegree-2025-full.jpg" alt="Python Nanodegree" class="photo-image" />
-            <div class="caption">
-              Python Nanodegree Certificate<br />
-              <small>2025</small>
-              <br />
-              <a class="file-button" href="assets/projects/python-nanodegree-2025-full.jpg" target="_blank">📄 View Certificate</a>
-            </div>
-          </div>
-          <!-- Malaria Logistic Regression -->
-          <div class="photo-card">
-            <img src="assets/projects/dfa-data-analysis-certificate-thumb.jpg" alt="Malaria Logistic Regression" class="photo-image" />
-            <div class="caption">
-              Malaria Logistic Regression (Research)<br />
-              <small>2025</small>
-              <br />
-              <a class="file-button" href="assets/projects/malaria-logistic-regression.pdf" target="_blank">📄 Download PDF</a>
-            </div>
-          </div>
-          <!-- Add more projects below, copy & edit this block -->
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Referral Popup -->
-  <div id="referral-popup" class="referral-popup" role="dialog" aria-hidden="true">
-    <button class="close-ref" onclick="document.getElementById('referral-popup').style.display='none';" aria-label="Close referral popup" style="position:absolute;top:6px;right:12px;background:none;border:none;color:#fff;font-size:1.3em;cursor:pointer;">&times;</button>
-    <div style="font-size:1.05em;margin-bottom:8px;">💡 Enjoying my portfolio? Please share or recommend me to employers in data, energy, or tech!</div>
-    <div style="font-size:0.96em;">
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://gbohigbaradc.github.io/" target="_blank" rel="noopener">Share on LinkedIn</a> |
-      <a href="https://twitter.com/intent/tweet?url=https://gbohigbaradc.github.io/&text=Check%20out%20this%20skilled%20remote%20data%20analyst!" target="_blank" rel="noopener">Tweet</a> |
-      <a href="https://api.whatsapp.com/send?text=Check%20out%20this%20remote%20data%20analyst%20portfolio:%20https://gbohigbaradc.github.io/" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
 
+  <main id="main" class="wrap">
+    <section id="about" class="panel" aria-labelledby="about-title">
+      <div class="intro-grid">
+        <div>
+          <p class="section-kicker">About me</p>
+          <h2 id="about-title">A data and AI practitioner with a builder's mindset.</h2>
+          <p>I am Gboh-Igbara D. Charles, a Data Scientist and AI Engineer with experience across data analysis, business intelligence, digital transformation, energy-sector work and machine learning. I turn complex information into practical tools and clear insights for people and organisations.</p>
+          <p class="muted">My work brings together analytical thinking, software delivery and responsible AI. I care about how products behave in real settings: whether their outputs can be understood, whether their limitations are clear, and whether the service can keep working when conditions are less than ideal.</p>
+        </div>
+        <ul class="highlight-list" aria-label="Professional focus">
+          <li><strong>Build:</strong> production-minded data, AI and web products.</li>
+          <li><strong>Explain:</strong> communicate findings and model limitations clearly.</li>
+          <li><strong>Protect:</strong> design for privacy, accountability and human oversight.</li>
+          <li><strong>Connect:</strong> bring technical work closer to operational needs.</li>
+        </ul>
+      </div>
+      <div class="link-row" aria-label="Professional profiles">
+        <a class="text-link" href="https://www.linkedin.com/in/gboh-igbara-d-charles-3287041b2" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="text-link" href="https://www.upwork.com/freelancers/~gbohigbaradc" target="_blank" rel="noopener noreferrer">Upwork ↗</a>
+        <a class="text-link" href="https://github.com/gbohigbaradc" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="text-link" href="mailto:gbohigbaradc@aol.com">Email me ↗</a>
+      </div>
+    </section>
+
+    <section id="joihealth" class="panel project-feature" aria-labelledby="joihealth-title">
+      <div class="feature-top">
+        <p class="section-kicker">Current flagship project · Healthcare technology</p>
+        <span class="status">Production system</span>
+      </div>
+      <h2 id="joihealth-title" class="feature-title">JoiHealth HMS: a hospital management system with a built-in clinical safety layer.</h2>
+      <p class="feature-copy">Built end to end for a two-branch polyclinic in Lagos and Port Harcourt, JoiHealth HMS goes beyond record keeping. It combines everyday clinical and operational workflows with rules-based safety checks, explain-only AI, accountable records and a hosting setup designed to withstand provider failure.</p>
+      <div class="live-links" aria-label="JoiHealth HMS live sites">
+        <a class="live-link" href="https://hms.joihealth.ng" target="_blank" rel="noopener noreferrer"><strong>hms.joihealth.ng ↗</strong><span>Primary · clinic custom domain</span></a>
+        <a class="live-link" href="https://joihealth-hms-frontend.vercel.app" target="_blank" rel="noopener noreferrer"><strong>Vercel deployment ↗</strong><span>Alternate frontend address</span></a>
+        <a class="live-link" href="https://joihealth-hms-frontend.onrender.com" target="_blank" rel="noopener noreferrer"><strong>Render backup ↗</strong><span>Backup frontend · may take a moment to wake</span></a>
+      </div>
+      <div class="callout"><strong>Clinical safety note:</strong> this is clinical decision support, not a medical device. Rules-engine thresholds are named defaults pending confirmation by the clinical team. AI outputs are drafts only and require clinician review. The live system contains real patient records, so staff sign-in is restricted and demo credentials are not published.</div>
+    </section>
+
+    <section class="panel" aria-labelledby="modules-title">
+      <p class="section-kicker">One system · connected workflows</p>
+      <h2 id="modules-title">What JoiHealth HMS covers</h2>
+      <p class="muted">A shared clinical core supports fourteen staff roles, each with access rules and a role-specific landing page.</p>
+      <div class="module-grid">
+        <article class="small-card"><span class="icon-label">Care</span><h3>Patients and EMR</h3><p>Registration, write-once vitals, diagnoses, allergies, immunizations, medications and patient history.</p></article>
+        <article class="small-card"><span class="icon-label">Care</span><h3>Treatment plans and notes</h3><p>Rich-text plans, immutable clinician notes, and ICD, ICF, CPT and HCPCS codes.</p></article>
+        <article class="small-card"><span class="icon-label">Finance</span><h3>Billing</h3><p>Invoices, line items, payments, overpayment blocking and PDF export.</p></article>
+        <article class="small-card"><span class="icon-label">Diagnostics</span><h3>Lab and imaging</h3><p>Orders, result files, X-ray and MRI analysis with clinician review and sign-off.</p></article>
+        <article class="small-card"><span class="icon-label">Rehabilitation</span><h3>Rehab</h3><p>Pre-session screening, target zones, prescriptions, programme outcomes and consent records.</p></article>
+        <article class="small-card"><span class="icon-label">Clinical</span><h3>Cardio risk</h3><p>Quick-entry risk assessment for the cardiology team.</p></article>
+        <article class="small-card"><span class="icon-label">Pharmacy</span><h3>Pharmacy</h3><p>Formulary, drug-safety checks, batch and expiry stock, dispensing, returns and controlled-drugs register.</p></article>
+        <article class="small-card"><span class="icon-label">Allied health</span><h3>Specialist modules</h3><p>Diet and nutrition, physiotherapy, psychology and occupational therapy.</p></article>
+        <article class="small-card"><span class="icon-label">Operations</span><h3>Clinic operations</h3><p>Appointments, referrals, inventory, requisitions and clinical meeting minutes.</p></article>
+        <article class="small-card"><span class="icon-label">Insights</span><h3>Dashboards and reports</h3><p>Role-specific dashboards and weekly progress reports.</p></article>
+        <article class="small-card"><span class="icon-label">Documents</span><h3>Clinic PDFs</h3><p>Downloadable record PDFs use the clinic letterhead and a shared footer.</p></article>
+        <article class="small-card"><span class="icon-label">Access</span><h3>Fourteen staff roles</h3><p>Admin, sub-admin, doctor, clinician, nurse, cardiologist, clinical psychologist, occupational therapist, pharmacist, pharmacy technician, records officer, accountant, procurement and general manager.</p></article>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="safety-title">
+      <p class="section-kicker">Designed for human oversight</p>
+      <h2 id="safety-title">Clinical safety and AI: explain, don't decide.</h2>
+      <div class="principle-grid">
+        <article class="small-card"><span class="icon-label">Rules first</span><h3>Predictable checks</h3><p>Screening flags, target heart-rate zones and drug-safety checks come from deterministic code and data tables, not a language model.</p></article>
+        <article class="small-card"><span class="icon-label">Human review</span><h3>AI drafts only</h3><p>The AI summarises and explains. An explicit clinician action is required before a draft can be saved.</p></article>
+        <article class="small-card"><span class="icon-label">Traceability</span><h3>Decision log</h3><p>Each saved result records the engine version and the flags that fired.</p></article>
+        <article class="small-card"><span class="icon-label">Consent</span><h3>Patient-level controls</h3><p>Consent history governs AI-assisted care and model-development use, including honoring withdrawal.</p></article>
+        <article class="small-card"><span class="icon-label">Visible defaults</span><h3>Named thresholds</h3><p>Clinical thresholds are explicit settings rather than buried constants, and are awaiting clinical sign-off.</p></article>
+        <article class="small-card"><span class="icon-label">Safeguards</span><h3>Controlled AI use</h3><p>Per-clinician rate limits and token caps help control cost and limit abuse.</p></article>
+      </div>
+      <h3 style="margin-top:24px">Imaging AI with guardrails</h3>
+      <div class="two-col">
+        <div class="small-card"><p>A separate imaging service uses an ONNX chest CNN to score 18 findings. A gate refuses images that are not chest X-rays; Grad-CAM heatmaps are drawn only for findings actually reported. MRI and other studies use a descriptive route with body-part and study-type mismatch checks.</p></div>
+        <div class="small-card"><p>Scores are operating-point values—not probabilities—with 0.5 representing the model's own threshold. Reports list findings above a reporting margin; weaker scores appear as a single near-threshold line. Sign-off is blocked while a mismatch finding remains, and access is limited to admin, sub-admin and cardiologist roles.</p></div>
+      </div>
+      <h3 style="margin-top:24px">Failure cases found and fixed</h3>
+      <div class="table-wrap"><table><thead><tr><th scope="col">Problem found</th><th scope="col">Change made</th></tr></thead><tbody>
+        <tr><td>Claimed “no change since the previous exam” when no earlier report existed.</td><td>The prompt now explicitly states when no earlier report exists and forbids comparison claims.</td></tr>
+        <tr><td>Described a possible malignancy on an image of the wrong body part.</td><td>Added mismatch checks, a malignancy-wording filter and sign-off blocking while a mismatch remains.</td></tr>
+        <tr><td>Produced different findings on two runs of the same image.</td><td>Set temperature to 0 and added a reliability note to descriptive reports.</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <section class="panel" aria-labelledby="integrity-title">
+      <p class="section-kicker">Accountable records · resilient operations</p>
+      <h2 id="integrity-title">Built to protect records and keep the service available.</h2>
+      <div class="two-col">
+        <article class="small-card"><h3>Records that cannot be quietly rewritten</h3><p>Clinical entries are write-once. Corrections are made as new entries so the history remains intact. Admin deletions require a reason and save a full snapshot to a log first.</p></article>
+        <article class="small-card"><h3>Defence in depth</h3><p>The frontend talks to the API, not directly to the database. The API acts on behalf of the signed-in clinician; Postgres row-level security enforces access again.</p></article>
+        <article class="small-card"><h3>Guardrails at entry</h3><p>Totals are computed on read, not stored. Overpayment blocking and deliberately wide vitals-range checks help catch entry mistakes without judging a patient.</p></article>
+        <article class="small-card"><h3>Recovery planning</h3><p>A standby backend runs the same code against the same data. The frontend can switch providers; a banner indicates standby use and traffic returns to primary automatically.</p></article>
+        <article class="small-card"><h3>Backups</h3><p>Nightly database dumps go to versioned cloud storage with a 90-day lifecycle, plus an offsite copy to reduce dependence on one cloud account.</p></article>
+        <article class="small-card"><h3>Cost controls</h3><p>Instance caps, budget alerts and free tiers where suitable keep hosting costs predictable and reduce the risk of a surprise bill.</p></article>
+      </div>
+      <div class="architecture" aria-label="JoiHealth HMS architecture summary"><pre>Browser → Vercel (Next.js frontend) → Cloud Run (FastAPI primary)
+                              └────→ Render (FastAPI standby)
+Cloud Run / Render → Supabase (Postgres + row-level security)
+Cloud Run → Cloud Storage (lab files and backups)
+Cloud Run / Render → Imaging service (ONNX CNN + Grad-CAM)</pre></div>
+      <div class="table-wrap"><table><thead><tr><th scope="col">Decision</th><th scope="col">Reason</th></tr></thead><tbody>
+        <tr><td>FastAPI in Python</td><td>Rules engines, PDF generation and machine learning can live in one service and language.</td></tr>
+        <tr><td>Supabase for data and sign-in</td><td>Managed Postgres, authentication and row-level security without running database or auth servers.</td></tr>
+        <tr><td>Next.js on Vercel</td><td>Quick deploys and preview builds to check changes before release.</td></tr>
+        <tr><td>Cloud Run primary backend</td><td>Scales to zero when idle and reaches Gemini through Vertex AI without a stored API key.</td></tr>
+        <tr><td>Render standby and frontend backup</td><td>A second provider and an alternate frontend address help mitigate provider or custom-domain outages. The standby calls the imaging service on Cloud Run; its descriptive route can work without the CNN.</td></tr>
+        <tr><td>Separate imaging service</td><td>Keeps the heavy model away from the core API and the standby's constrained memory; lab orders continue if imaging is unavailable.</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <section class="panel" aria-labelledby="stack-title">
+      <p class="section-kicker">Under the hood</p>
+      <h2 id="stack-title">JoiHealth HMS technology stack</h2>
+      <div class="two-col">
+        <div><h3>Application</h3><ul class="stack-list"><li>Next.js</li><li>React</li><li>TypeScript</li><li>TipTap</li><li>FastAPI</li><li>Python</li><li>ReportLab</li></ul></div>
+        <div><h3>Data, AI and infrastructure</h3><ul class="stack-list"><li>Supabase</li><li>Postgres</li><li>Row-level security</li><li>Gemini</li><li>Vertex AI</li><li>ONNX Runtime</li><li>Google Cloud Storage</li><li>Cloud Run Jobs</li><li>Cloud Scheduler</li><li>Vercel</li><li>Render</li></ul></div>
+      </div>
+      <h3 style="margin-top:24px">Repository layout</h3>
+      <p class="muted">The system is split across three repositories: <code>joihealth-hms-backend</code> (FastAPI service, routers, rules engines, PDF code and Dockerfile), <code>joihealth-hms-frontend</code> (Next.js application), and <code>joihealth-imaging-ai</code> (ONNX imaging service).</p>
+    </section>
+
+    <section class="panel" aria-labelledby="roadmap-title">
+      <p class="section-kicker">Honest about limitations</p>
+      <h2 id="roadmap-title">What is still in progress</h2>
+      <ul class="highlight-list">
+        <li>Clinical thresholds and drug-safety rules need clinical-team sign-off before they are treated as final.</li>
+        <li>Built-in ICD, ICF and HCPCS datasets are small samples; full licensed sets still need to be sourced.</li>
+        <li>The imaging CNN is a screening aid and has so far been validated only on public sample images.</li>
+        <li>Hosting is being moved from personal accounts to company-owned accounts.</li>
+        <li>Next steps: pharmacy go-live and clinician training.</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="panel" aria-labelledby="projects-title">
+      <p class="section-kicker">More work</p>
+      <h2 id="projects-title">Projects in data, AI and digital transformation</h2>
+      <div class="project-grid">
+        <article class="project-card"><span class="icon-label">Environment · AI</span><h3>Ogoni EcoWatch</h3><p>A community-driven platform concept using AI to support environmental monitoring in Ogoni Land and across Africa, helping citizens, field teams and organisations detect and respond to environmental issues.</p><div class="link-row"><a class="file-button" href="assets/projects/ogoni-ecowatch/ogoni-ecowatch-project.pdf" target="_blank" rel="noopener">Project document</a></div></article>
+        <article class="project-card"><span class="icon-label">Healthcare · ML</span><h3>CardioAI</h3><p>An explainable machine-learning system for cardiovascular risk prediction, designed to explore patient retention and healthcare analytics in Nigerian healthcare settings.</p><div class="link-row"><a class="file-button" href="assets/projects/cardioai-project.pdf" target="_blank" rel="noopener">Project document</a></div></article>
+        <article class="project-card"><span class="icon-label">Research · Analytics</span><h3>Malaria Logistic Regression</h3><p>A 2025 research project applying logistic regression to malaria-related data analysis.</p><div class="link-row"><a class="file-button" href="assets/projects/malaria-logistic-regression.pdf" target="_blank" rel="noopener">Research PDF</a></div></article>
+      </div>
+      <div class="gallery" aria-label="Project and certificate downloads">
+        <article class="gallery-card"><img src="assets/projects/ogoni-ecowatch/ogoni-ecowatch-thumb.jpg" alt="Ogoni EcoWatch project preview" loading="lazy" /><div class="gallery-caption"><strong>Ogoni EcoWatch</strong><small>Environmental AI monitoring</small><a class="file-button" href="assets/projects/ogoni-ecowatch/ogoni-ecowatch-project.pdf" target="_blank" rel="noopener">Download project PDF</a></div></article>
+        <article class="gallery-card"><img src="assets/projects/cardioai-thumb.jpg" alt="CardioAI project preview" loading="lazy" /><div class="gallery-caption"><strong>CardioAI</strong><small>Healthcare machine-learning system</small><a class="file-button" href="assets/projects/cardioai-project.pdf" target="_blank" rel="noopener">Download project PDF</a></div></article>
+        <article class="gallery-card"><img src="assets/projects/python-nanodegree-2025-full.jpg" alt="Python Nanodegree certificate" loading="lazy" /><div class="gallery-caption"><strong>Python Nanodegree Certificate</strong><small>2025</small><a class="file-button" href="assets/projects/python-nanodegree-2025-full.jpg" target="_blank" rel="noopener">View certificate</a></div></article>
+        <article class="gallery-card"><img src="assets/projects/dfa-data-analysis-certificate-thumb.jpg" alt="Malaria logistic regression research preview" loading="lazy" /><div class="gallery-caption"><strong>Malaria Logistic Regression</strong><small>Research · 2025</small><a class="file-button" href="assets/projects/malaria-logistic-regression.pdf" target="_blank" rel="noopener">Download research PDF</a></div></article>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="certificates-title">
+      <p class="section-kicker">Professional development</p>
+      <h2 id="certificates-title">Data science and machine-learning certificates</h2>
+      <div class="gallery">
+        <article class="gallery-card"><img src="assets/certificates/datascience/2025-dfa-data-analysis-certificate-thumb.jpg" alt="Data Analysis Certificate thumbnail" loading="lazy" /><div class="gallery-caption"><strong>Data Analysis Certificate</strong><small>DFA · 2025</small><a class="file-button" href="assets/certificates/datascience/2025-dfa-data-analysis-certificate-certificate.pdf" target="_blank" rel="noopener">Download certificate PDF</a></div></article>
+      </div>
+    </section>
+
+    <section id="showcase" class="panel" aria-labelledby="showcase-title">
+      <p class="section-kicker">Talks and project walkthroughs</p>
+      <h2 id="showcase-title">Video introductions and knowledge showcase</h2>
+      <div class="video-grid">
+        <article class="video-card"><h3>Introduction: Meet Gboh-Igbara D. Charles</h3><p>A short introduction to my work and interests.</p><div class="video-frame"><iframe src="https://www.youtube.com/embed/wpT2xVdekJY" title="Video introduction to Gboh-Igbara D. Charles" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></article>
+        <article class="video-card"><h3>Predictive Data Modelling · 3MTT Knowledge Showcase</h3><p>How a predictive machine-learning project earned the 3MTT E-Tablet Award after months of hands-on training.</p><div class="video-frame"><iframe src="https://www.youtube.com/embed/YOAx8QoHvwE" title="Project knowledge showcase: predictive data modelling" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></article>
+        <article class="video-card"><h3>Award Presentation: 3MTT E-Tablet Winner · June 2025</h3><p>3MTT award presentation.</p><div class="video-frame"><iframe src="https://www.youtube.com/embed/7oeISNe8DIg" title="Award presentation: 3MTT E-Tablet" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></article>
+        <article class="video-card"><h3>Ogoni EcoWatch presentation</h3><p>Project presentation for AI-powered environmental monitoring.</p><div class="video-frame"><iframe src="https://www.youtube.com/embed/4JYwwKpFl5E" title="Ogoni EcoWatch presentation" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></article>
+      </div>
+      <h3 style="margin-top:26px">JoiHealth HMS knowledge showcase</h3>
+      <p class="muted">A 12-slide walkthrough of the build, features, design decisions and safety considerations.</p>
+      <div class="link-row"><a class="button" href="HMS_Knowledge_Showcase.pdf" target="_blank" rel="noopener">View showcase PDF</a><a class="text-link" href="HMS_Knowledge_Showcase.pptx" download>Download editable PowerPoint</a></div>
+    </section>
+
+    <section class="panel" aria-labelledby="ogoni-video-title">
+      <p class="section-kicker">Featured project</p>
+      <h2 id="ogoni-video-title">Ogoni EcoWatch · environmental monitoring</h2>
+      <p class="muted">A community-driven platform concept leveraging AI to support environmental monitoring in Ogoni Land and Africa. It is designed to help citizens, field teams and organisations detect environmental issues and coordinate response.</p>
+      <div class="link-row"><a class="text-link" href="assets/projects/ogoni-ecowatch/ogoni-ecowatch-project.pdf" target="_blank" rel="noopener">Download project document</a></div>
+    </section>
+
+    <section class="panel" aria-labelledby="connect-title">
+      <p class="section-kicker">Share and connect</p>
+      <h2 id="connect-title">Keep in touch</h2>
+      <div class="qr-layout">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&amp;data=https%3A%2F%2Fgbohigbaradc.github.io%2F" alt="QR code linking to this portfolio" loading="lazy" />
+        <div><h3>Scan to open my portfolio</h3><p class="muted">Share this page with a colleague, collaborator or potential employer.</p><div class="link-row"><a class="text-link" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgbohigbaradc.github.io%2F" target="_blank" rel="noopener noreferrer">Share on LinkedIn ↗</a><a class="text-link" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgbohigbaradc.github.io%2F&amp;text=Explore%20the%20work%20of%20Gboh-Igbara%20D.%20Charles" target="_blank" rel="noopener noreferrer">Share on X ↗</a><a class="text-link" href="https://api.whatsapp.com/send?text=Explore%20this%20portfolio%3A%20https%3A%2F%2Fgbohigbaradc.github.io%2F" target="_blank" rel="noopener noreferrer">Share on WhatsApp ↗</a></div></div>
+      </div>
+      <h3 style="margin-top:27px">Embed my portfolio badge</h3>
+      <p class="muted">Copy this snippet to recommend my portfolio on a website or blog.</p>
+      <pre class="badge-code"><code>&lt;a href="https://gbohigbaradc.github.io/" target="_blank" rel="noopener"&gt;
+  &lt;img src="https://gbohigbaradc.github.io/assets/images/gboh-igbara-d-charles-profile.jpg" alt="Gboh-Igbara D. Charles — Data Scientist and AI Engineer" style="border-radius:8px;width:120px;border:2px solid #176b4b;"&gt;
+&lt;/a&gt;</code></pre>
+    </section>
+
+    <section id="contact" class="panel" aria-labelledby="contact-title">
+      <p class="section-kicker">Let's work together</p>
+      <h2 id="contact-title">Have a data, AI or digital product challenge?</h2>
+      <p class="muted">I’m open to conversations about data science, AI engineering, analytics and responsible technology.</p>
+      <div class="link-row"><a class="button" href="mailto:gbohigbaradc@aol.com">Email Gboh-Igbara</a><a class="text-link" href="https://www.linkedin.com/in/gboh-igbara-d-charles-3287041b2" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a><a class="text-link" href="https://www.upwork.com/freelancers/~gbohigbaradc" target="_blank" rel="noopener noreferrer">Find me on Upwork ↗</a><a class="text-link" href="https://github.com/gbohigbaradc" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a></div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-row"><span>© <span id="year">2026</span> Gboh-Igbara D. Charles · Data Scientist and AI Engineer</span><span>Built with care. JoiHealth HMS license: to be confirmed with JoiHealth Polyclinics; all rights reserved until then.</span></div></footer>
+
+  <aside id="referral-popup" class="referral-popup" role="dialog" aria-label="Share this portfolio" aria-hidden="true">
+    <button class="close-ref" type="button" aria-label="Close sharing message">×</button>
+    <p><strong>Enjoying my portfolio?</strong> Please share it with employers and collaborators in data, healthcare, energy or technology.</p>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgbohigbaradc.github.io%2F" target="_blank" rel="noopener noreferrer">Share on LinkedIn</a> ·
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgbohigbaradc.github.io%2F&amp;text=Explore%20this%20portfolio" target="_blank" rel="noopener noreferrer">Share on X</a> ·
+    <a href="https://api.whatsapp.com/send?text=Explore%20this%20portfolio%3A%20https%3A%2F%2Fgbohigbaradc.github.io%2F" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </aside>
+
   <script>
-    // referral popup after 8s
-    setTimeout(function() {
-      const popup = document.getElementById('referral-popup');
-      if (popup) {
-        popup.style.display = 'block';
-        popup.setAttribute('aria-hidden', 'false');
-      }
-    }, 8000);
+    (function () {
+      var year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
+      var popup = document.getElementById('referral-popup');
+      var closeButton = popup && popup.querySelector('.close-ref');
+      if (!popup || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      window.setTimeout(function () {
+        if (sessionStorage.getItem('portfolio-share-dismissed') !== '1') {
+          popup.style.display = 'block';
+          popup.setAttribute('aria-hidden', 'false');
+        }
+      }, 12000);
+      if (closeButton) closeButton.addEventListener('click', function () {
+        popup.style.display = 'none';
+        popup.setAttribute('aria-hidden', 'true');
+        sessionStorage.setItem('portfolio-share-dismissed', '1');
+      });
+    }());
   </script>
 </body>
 </html>
